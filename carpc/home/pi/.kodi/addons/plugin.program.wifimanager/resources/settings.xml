@@ -1,0 +1,11 @@
+<settings>
+    <category>
+        <setting id="apmode" type ="bool" label="30010" default="false" />
+        <setting id="ssid" type ="text" label="30016" default="CARPI" subsetting="true" enable="true" visible="eq(-1,true)" />
+        <setting id="password" type ="text" label="30017" default="1234567890" option="hidden" subsetting="true" enable="true" visible="eq(-2,true)" />
+        <setting id="realtek" type ="bool" label="30037" default="false" />
+        <setting id="warning" type ="bool" label="30036" default="true" />
+	<setting type="lsep"/>
+        <setting id="apmodestartup" type ="bool" label="30045" default="false" />
+    </category>
+</settings>

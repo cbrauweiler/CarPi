@@ -1,0 +1,153 @@
+# Kodi Media Center language file
+# Addon Name: USB Manager
+# Addon id: plugin.program.usbmanager
+# Addon Provider: Marc Hillesheim
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30001"
+msgid "Mount"
+msgstr "Einhängen"
+
+msgctxt "#30002"
+msgid "Unmount"
+msgstr "Aushängen"
+
+msgctxt "#30003"
+msgid "Do you wan't to mount the drive?"
+msgstr "Wollen Sie das Laufwerk einhängen?"
+
+msgctxt "#30004"
+msgid "Do you really wan't to unmount the drive?"
+msgstr "Wollen Sie das Laufwerk wirklich aushängen?"
+
+msgctxt "#30005"
+msgid "Error"
+msgstr "Fehler"
+
+msgctxt "#30006"
+msgid "Something went wrong! Abort."
+msgstr "Etwas war fehlerhat! Abbruch."
+
+msgctxt "#30007"
+msgid "Checking"
+msgstr "Prüfen"
+
+msgctxt "#30008"
+msgid "System package is missing!"
+msgstr "Ein Systempaket fehlt!"
+
+msgctxt "#30009"
+msgid "Install missing requirements?"
+msgstr "Fehlende Voraussetzungen installieren?"
+
+msgctxt "#30010"
+msgid "This can conflict with this addon!"
+msgstr "Dies kann mit diesem Addon Konflikte verursachen!"
+
+msgctxt "#30018"
+msgid "The addon is only working on Raspbian GNU/Linux!"
+msgstr "Das Addon funktioniert nur unter Raspbian GNU/Linux!"
+
+msgctxt "#30021"
+msgid "Please wait!"
+msgstr "Bitte warten!"
+
+msgctxt "#30025"
+msgid "Internet connection: ok"
+msgstr "Internetverbindung: ok"
+
+msgctxt "#30026"
+msgid "No internet connection - installation not possible!"
+msgstr "Internetverbindung fehlt - Keine Installation möglich!"
+
+msgctxt "#30039"
+msgid "Installiere exfat-utils..."
+msgstr "Installiere exfat-utils..."
+
+msgctxt "#30040"
+msgid "Installing ntfs-3g..."
+msgstr "Installiere ntfs-3g..."
+
+msgctxt "#30041"
+msgid "Installing exfat-fuse..."
+msgstr "Installiere exfat-fuse..."
+
+msgctxt "#30042"
+msgid "Base requirements missing"
+msgstr "Grundvoraussetzungen nicht erfüllt"
+
+msgctxt "#30043"
+msgid "Link media to base folder"
+msgstr "Medien ins Basisverzeichnis verlinken"
+
+msgctxt "#30044"
+msgid "Base folder for media (usually /media)"
+msgstr "Stammordner für Medien (gewöhnlich /media)"
+
+msgctxt "#30045"
+msgid "Automatically link media to kodi database"
+msgstr "Medien automatisch in Kodi-Datenbank verlinken"
+
+msgctxt "#30046"
+msgid "Default folder for movies"
+msgstr "Standardordner für Filme"
+
+msgctxt "#30047"
+msgid "Default folder for music"
+msgstr "Standardordner für Musik"
+
+msgctxt "#30048"
+msgid "Default folder for pictures"
+msgstr "Standardordner für Bilder"
+
+msgctxt "#30049"
+msgid "Default folder for musicvideos"
+msgstr "Standardordner für Musikvideos"
+
+msgctxt "#30050"
+msgid "Note: if enabled folders will be checked/created and"
+msgstr "Hinweis: wenn aktiviert werden Ordner geprüft/erstellt und"
+
+msgctxt "#30051"
+msgid "the kodi sources.xml will be replaced with configured values!"
+msgstr "die sources.xml von Kodi wird ersetzt mit den Einstellungen!"
+
+msgctxt "#30052"
+msgid "Automount is active. No manually mount / unmount is possible!"
+msgstr "Automount ist aktiv. Manuelles Einhängen / Aushängen ist NICHT möglich!"
+
+msgctxt "#30053"
+msgid "No removeable mass storage devices detected."
+msgstr "Keine entfernbaren Massenspeicher erkannt."
+
+msgctxt "#30054"
+msgid "Installing hfsplus..."
+msgstr "Installiere hfsplus..."
+
+msgctxt "#30055"
+msgid "Installing hfsprogs..."
+msgstr "Installiere hfsprogs..."
+
+msgctxt "#30056"
+msgid "Installing hfsutils..."
+msgstr "Installiere hfsutils..."
+
+msgctxt "#30057"
+msgid "Removing gvfs..."
+msgstr "Entferne gvfs..."
+
+msgctxt "#30058"
+msgid "Automatically mount usb mass storage"
+msgstr "USB-Datenträger automatisch einbinden"

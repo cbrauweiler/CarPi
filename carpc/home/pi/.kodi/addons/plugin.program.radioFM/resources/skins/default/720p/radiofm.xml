@@ -1,0 +1,1198 @@
+<window id="1100">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <onload condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onload>
+    <onload condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onload>
+    <include>Window_OpenClose_Animation_Zoom</include>
+    <controls>
+	    <include>CommonBackground</include>
+	    <control type="image">
+		    <description>Normal Default Background Image</description>
+		    <left>0</left>
+		    <top>0</top>
+		    <width>1280</width>
+		    <height>720</height>
+		    <aspectratio>scale</aspectratio>
+		    <texture>$INFO[Skin.String(RadioAddonBackgroundImage)]</texture>
+		    <include>VisibleFadeEffect</include>
+		    <visible>Skin.HasSetting(RadioAddonBackground)</visible>
+	    </control>
+	    <control type="image">
+		    <include>Window_OpenClose_Animation_Slide_Down</include>
+		    <posx>0</posx>
+		    <posy>0</posy>
+		    <width>ScreenWidth</width>
+		    <height>80</height>
+		    <texture>radio_topbar.png</texture>
+	    </control>
+	    <control type="group">
+		<control type="image">
+			<visible>substring(Window(Home).Property(Radio.xtouch),false)</visible>
+			<include>Window_OpenClose_Animation_Slide_Down</include>
+			<include>VisibleFadeEffect</include>
+			<posx>450</posx>
+		        <posy>0</posy>
+			<width>375</width>
+			<height>75</height>
+			<aligny>center</aligny>
+			<align>center</align>
+			<texture>radio_ceas.png</texture>
+		</control>
+		<control type="label">
+			<visible>substring(Window(Home).Property(Radio.xtouch),false)</visible>
+			<include>Window_OpenClose_Animation_Slide_Down</include>
+			<description>time label</description>
+			<posx>255</posx>
+			<posy>0</posy>
+			<width>350</width>
+			<height>67</height>
+			<aligny>center</aligny>
+			<align>center</align>
+			<font>font50_title</font>
+			<textcolor>white</textcolor>
+			<label>$INFO[System.Time]</label>
+			<include>VisibleFadeEffect</include>
+			<include>16x9_xPos_Relocation</include>
+		</control>
+		<control type="label">
+			<visible>substring(Window(Home).Property(Radio.xtouch),true)</visible>
+			<include>Window_OpenClose_Animation_Slide_Down</include>
+			<description>time label xtouch skin</description>
+			<posx>440</posx>
+			<posy>20</posy>
+			<width>400</width>
+			<height>40</height>
+			<aligny>center</aligny>
+			<align>center</align>
+			<font>font60_title</font>
+			<textcolor>white</textcolor>
+			<label>$INFO[System.Time]</label>
+			<include>VisibleFadeEffect</include>
+		</control>
+	    </control>
+	    <control type="image">
+		    <visible>substring(Window(Home).Property(Radio.xtouch),false)</visible>
+		    <include>Window_OpenClose_Animation_Slide_Up</include>
+		    <posx>0</posx>
+		    <posy>630</posy>
+		    <width>ScreenWidth</width>
+		    <height>90</height>
+		    <texture>radio_bottombar.png</texture>
+	    </control>
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+		<visible>substring(Window(Home).Property(Radio.RDS),RDS)</visible>
+		<posx>120</posx>
+		<posy>-6</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="label">
+			<description>Type</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>300</width>
+			<font>font30_title</font>
+			<height>80</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<shadowcolor>black</shadowcolor>
+			<label>[B][COLOR=white]RDS[/COLOR][/B]</label>
+		</control>
+	    </control>
+	    <control type="button" id="1103">
+		    <description>Dummy Focus Button</description>
+		    <posx>-1</posx>
+		    <posy>-1</posy>
+		    <width>1</width>
+		    <height>1</height>
+		    <font>-</font>
+		    <texturenofocus border="5">overlay.png</texturenofocus>
+		    <texturefocus border="5">overlay.png</texturefocus>
+	    </control>
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<posx>385</posx>
+		<posy>85</posy>
+		<control type="button">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>100</height>
+			<font>WeatherTemp</font>
+			<style>bold</style>
+			<textcolor>white</textcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+			<texturenofocus border="5">overlay.png</texturenofocus>
+			<texturefocus border="5">overlay.png</texturefocus>
+	                <label>$INFO[Window(Home).Property(Radio.Frequency)] MHz</label>
+			<onclick>Skin.ToggleSetting(RadioAddonBackground)</onclick>
+		</control>
+	    </control>
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+		<control type="label">
+			<posx>0r</posx>
+			<posy>-10</posy>
+			<visible>true</visible>
+			<width>480</width>
+			<height>100</height>
+			<font>font50_title</font>
+			<style>bold</style>
+			<textcolor>white</textcolor>
+			<shadowcolor>FF000000</shadowcolor>
+			<align>right</align>
+			<aligny>center</aligny>
+	                <label>$INFO[Window(Home).Property(Radio.StationName)]</label>
+		</control>
+	    </control>
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(Radio.ShowRadiotext),true)</visible>
+		<control type="image">
+			<visible>substring(Window(Home).Property(Radio.xtouch),false)</visible>
+			<description>RDS bg Image</description>
+			<posx>0</posx>
+			<posy>568</posy>
+			<width>1280</width>
+			<height>56</height>
+			<texture>radio_rdstext.png</texture>
+		</control>
+		<control type="image">
+			<visible>substring(Window(Home).Property(Radio.xtouch),true)</visible>
+			<description>RDS bg Image</description>
+			<posx>20</posx>
+			<posy>568</posy>
+			<width>1240</width>
+			<height>56</height>
+			<texture>radio_info_bg.png</texture>
+		</control>
+		<control type="label">
+			<posx>20</posx>
+			<posy>570</posy>
+			<width>1240</width>
+			<height>50</height>
+			<font>font40_title</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+			<scroll>true</scroll>
+	                <label>$INFO[Window(Home).Property(Radio.RadioText)]</label>
+		</control>
+	    </control>
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+		<posx>0</posx>
+		<posy>0</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1101">
+			<description>Home Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>75</width>
+			<height>75</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">radio_floor_buttonFO.png</texturefocus>
+			<onclick>ActivateWindow(Home)</onclick>
+		</control>
+		<control type="image">
+			<description>Home Button Image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>70</width>
+			<height>70</height>
+			<texture>radio_icon_home.png</texture>
+		</control>
+	    </control>
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<posx>86r</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1102">
+			<description>Back Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">radio_floor_buttonFO.png</texturefocus>
+			<onclick>ParentDir</onclick>
+		</control>
+		<control type="image">
+			<description>Back Button Image</description>
+			<posx>8</posx>
+			<posy>8</posy>
+			<width>64</width>
+			<height>64</height>
+			<texture>radio_icon_back_w.png</texture>
+		</control>
+	    </control>
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<posx>0</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1114">
+			<description>Settings Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">radio_floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="image">
+			<description>Settings Button Image</description>
+			<posx>8</posx>
+			<posy>8</posy>
+			<width>64</width>
+			<height>64</height>
+			<texture>radio_icon_settings_w.png</texture>
+		</control>
+	    </control>
+	    <control type="group">
+		<animation effect="slide" start="-560,0" end="0,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-560,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+		<posx>440</posx>
+		<posy>90</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1107">
+			<description>Seek Down Button</description>
+			<posx>-240</posx>
+			<posy>10</posy>
+			<width>80</width>
+			<height>80</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_icon_prev.png</texturenofocus>
+			<texturefocus border="5">radio_icon_prev_p.png</texturefocus>
+		</control>
+		<control type="button" id="1105">
+			<description>Tune Down Button</description>
+			<posx>-140</posx>
+			<posy>0</posy>
+			<width>100</width>
+			<height>100</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_icon_prev.png</texturenofocus>
+			<texturefocus border="5">radio_icon_prev_p.png</texturefocus>
+		</control>
+	    </control>
+	    <control type="group">
+		<animation effect="slide" start="560,0" end="0,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="560,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+		<posx>440</posx>
+		<posy>90</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1104">
+			<description>Tune Up Button</description>
+			<posx>440</posx>
+			<posy>0</posy>
+			<width>100</width>
+			<height>100</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_icon_next.png</texturenofocus>
+			<texturefocus border="5">radio_icon_next_p.png</texturefocus>
+		</control>
+		<control type="button" id="1106">
+			<description>Seek Up Button</description>
+			<posx>560</posx>
+			<posy>10</posy>
+			<width>80</width>
+			<height>80</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_icon_next.png</texturenofocus>
+			<texturefocus border="5">radio_icon_next_p.png</texturefocus>
+		</control>
+	    </control>
+<!-- left list -->
+	    <control type="group">
+		<animation effect="slide" start="-640,0" end="0,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-640,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+		<posx>10</posx>
+		<posy>200</posy>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>0</posy>
+		    <control type="button" id="1121">
+			    <description>Station 1</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_l.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_l_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station1, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station1b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station1,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station1b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station1)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station1b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>74</posy>
+		    <control type="button" id="1123">
+			    <description>Station 3</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_l.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_l_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station3, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station3b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station3,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station3b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station3)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station3b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>148</posy>
+		    <control type="button" id="1125">
+			    <description>Station 5</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_l.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_l_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station5, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station5b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station5,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station5b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station5)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station5b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>222</posy>
+		    <control type="button" id="1127">
+			    <description>Station 7</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_l.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_l_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station7, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station7b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station7,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station7b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station7)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station7b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>296</posy>
+		    <control type="button" id="1129">
+			    <description>Station 9</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_l.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_l_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station9, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station9b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station9,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station9b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station9)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station9b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+	    </control>
+<!-- radio station logo -->
+	    <control type="group">
+	        <include>Window_OpenClose_Animation_Zoom</include>
+		<posx>470</posx>
+		<posy>200</posy>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>340</width>
+			<height>364</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<texture>radio_logobg.png</texture>
+		</control>
+		<control type="image">
+			<include>VisibleFadeEffect</include>
+			<visible>substring(Window(Home).Property(Radio.Logo),true)</visible>
+			<posx>10</posx>
+			<posy>18</posy>
+			<width>320</width>
+			<height>330</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<aspectratio scalediffuse="true" align="center" alighny="center">stretch</aspectratio>
+			<texture diffuse="radio_logo_cut.png">$INFO[Window(10000).Property(Radio.StationLogo)]</texture>
+		</control>
+	    </control>
+<!-- right list -->
+	    <control type="group">
+		<animation effect="slide" start="640,0" end="0,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="640,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+		<posx>460r</posx>
+		<posy>200</posy>
+		<control type="group">
+		    <control type="button" id="1122">
+			    <description>Station 2</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_r.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_r_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station2, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station2b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station2,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station2b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station2)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station2b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>74</posy>
+		    <control type="button" id="1124">
+			    <description>Station 4</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_r.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_r_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station4, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station4b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station4,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station4b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station4)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station4b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>148</posy>
+		    <control type="button" id="1126">
+			    <description>Station 6</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_r.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_r_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station6, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station6b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station6,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station6b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station6)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station6b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>222</posy>
+		    <control type="button" id="1128">
+			    <description>Station 8</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_r.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_r_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station8, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station8b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station8,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station8b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station8)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <visible>true</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station8b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+		<control type="group">
+		    <posx>0</posx>
+		    <posy>296</posy>
+		    <control type="button" id="1130">
+			    <description>Station 10</description>
+			    <posx>0</posx>
+			    <posy>0</posy>
+		    	    <width>450</width>
+			    <height>70</height>
+			    <font>-</font>
+			    <texturenofocus border="5">radio_stations_r.png</texturenofocus>
+			    <texturefocus border="5">radio_stations_r_p.png</texturefocus>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station10, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(SaveRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station10b, $INFO[Window(Home).Property(Radio.Frequency)] - $INFO[Window(Home).Property(Radio.StationName)],10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station10,- - -,10000)</onclick>
+			    <onclick condition="!Skin.HasSetting(DeleteRadioStation) + !Skin.HasSetting(ListRadioStation)">SetProperty(Radio.Station10b,- - -,10000)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		    	    <onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>Skin.HasSetting(ListRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station10)]</label>
+		    </control>
+		    <control type="label">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(ListRadioStation)</visible>
+			    <posx>30</posx>
+			    <posy>0</posy>
+			    <width>400</width>
+			    <height>70</height>
+			    <font>font30_title</font>
+			    <style>bold</style>
+			    <textcolor>white</textcolor>
+			    <align>center</align>
+			    <aligny>center</aligny>
+	                    <label>$INFO[Window(Home).Property(Radio.Station10b)]</label>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(DeleteRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_delete_station.png</texture>
+		    </control>
+		    <control type="image">
+			    <include>VisibleFadeEffect</include>
+			    <visible>!Skin.HasSetting(SaveRadioStation)</visible>
+			    <posx>390</posx>
+			    <posy>15</posy>
+			    <width>40</width>
+			    <height>40</height>
+			    <align>center</align>
+			    <aligny>center</aligny>
+			    <texture>radio_save_station.png</texture>
+		    </control>
+		</control>
+	    </control>
+<!-- End Stations -->
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<posx>385</posx>
+		<posy>85r</posy>
+    		<control type="button" id="1109">
+			<description>Volume Down Button</description>
+			<visible>!System.HasAddon(service.carpccontroller)</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_icon_voldown.png</texturenofocus>
+			<texturefocus border="5">radio_icon_voldown_p.png</texturefocus>
+		</control>
+		<control type="label">
+			<description>label</description>
+			<posx>180</posx>
+			<posy>40</posy>
+			<height>37</height>
+			<width>150</width>
+			<label>13376</label>
+			<font>font10_title</font>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<description>Volumelabel</description>
+			<posx>414</posx>
+			<posy>40</posy>
+			<height>37</height>
+			<width>150</width>
+			<label>$INFO[Control.GetLabel(1)]</label>
+			<font>font10_title</font>
+			<align>right</align>
+			<aligny>center</aligny>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="progress">
+			<description>Volume</description>
+			<posx>90</posx>
+			<posy>8</posy>
+			<width>337</width>
+			<height>37</height>
+			<info>Player.Volume</info>
+		</control>
+		<control type="slider" id="1">
+			<description>Volume Slider</description>
+			<visible>System.HasAddon(service.carpccontroller)</visible>
+			<posx>90</posx>
+			<posy>5</posy>
+			<width>337</width>
+			<height>47</height>
+			<info>Player.Volume</info>
+			<action>Volume</action>
+			<texturesliderbar>OSDProgressBack2.png</texturesliderbar>
+			<textureslidernib>OSDSliderNib.png</textureslidernib>
+			<textureslidernibfocus>OSDSliderNib.png</textureslidernibfocus>
+		</control>
+		<control type="button" id="1108">
+			<description>Volume Up Button</description>
+			<visible>!System.HasAddon(service.carpccontroller)</visible>
+			<posx>435</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_icon_volup.png</texturenofocus>
+			<texturefocus border="5">radio_icon_volup_p.png</texturefocus>
+		</control>
+	    </control>
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<posx>165</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1110">
+			<description>Store Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">radio_icon_store.png</texturenofocus>
+			<texturefocus border="5">radio_icon_store_p.png</texturefocus>
+			<onclick>Skin.ToggleSetting(SaveRadioStation)</onclick>
+			<onclick condition="!Skin.HasSetting(DeleteRadioStation)">Skin.ToggleSetting(DeleteRadioStation)</onclick>
+		</control>
+		<control type="button" id="1111">
+			<description>Delete Button</description>
+			<posx>90</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<texturenofocus border="5">radio_icon_delete.png</texturenofocus>
+			<texturefocus border="5">radio_icon_delete_p.png</texturefocus>
+			<onclick>Skin.ToggleSetting(DeleteRadioStation)</onclick>
+			<onclick condition="!Skin.HasSetting(SaveRadioStation)">Skin.ToggleSetting(SaveRadioStation)</onclick>
+		</control>
+		<control type="togglebutton" id="1113">
+			<description>Mute Button</description>
+			<posx>337r</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<texturenofocus border="5">radio_icon_unmuted.png</texturenofocus>
+			<texturefocus border="5">radio_icon_unmuted_p.png</texturefocus>
+			<alttexturenofocus border="5">radio_icon_muted.png</alttexturenofocus>
+			<alttexturefocus border="5">radio_icon_muted_p.png</alttexturefocus>
+			<selected>!Skin.HasSetting(MuteVolume)</selected>
+		</control>
+		<control type="togglebutton" id="1112">
+			<description>Station List Button</description>
+			<posx>247r</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<texturenofocus border="5">radio_icon_stations_2.png</texturenofocus>
+			<texturefocus border="5">radio_icon_stations_2_p.png</texturefocus>
+			<alttexturenofocus border="5">radio_icon_stations_1.png</alttexturenofocus>
+			<alttexturefocus border="5">radio_icon_stations_1_p.png</alttexturefocus>
+			<onclick>Skin.ToggleSetting(ListRadioStation)</onclick>
+			<selected>Skin.HasSetting(ListRadioStation)</selected>
+		</control>
+	    </control>
+	</controls>
+</window>
+

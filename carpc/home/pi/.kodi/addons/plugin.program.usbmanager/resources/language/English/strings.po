@@ -1,0 +1,153 @@
+# Kodi Media Center language file
+# Addon Name: USB Manager
+# Addon id: plugin.program.usbmanager
+# Addon Provider: Marc Hillesheim
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30001"
+msgid "Mount"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Unmount"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Do you wan't to mount the drive?"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Do you really wan't to unmount the drive?"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Error"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Something went wrong! Abort."
+msgstr ""
+
+msgctxt "#30007"
+msgid "Checking"
+msgstr ""
+
+msgctxt "#30008"
+msgid "System package is missing!"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Install missing requirements?"
+msgstr ""
+
+msgctxt "#30010"
+msgid "This can conflict with this addon!"
+msgstr ""
+
+msgctxt "#30018"
+msgid "The addon is only working on Raspbian GNU/Linux!"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Please wait!"
+msgstr ""
+
+msgctxt "#30025"
+msgid "Internet connection: ok"
+msgstr ""
+
+msgctxt "#30026"
+msgid "No internet connection - installation not possible!"
+msgstr ""
+
+msgctxt "#30039"
+msgid "Installing exfat-utils..."
+msgstr ""
+
+msgctxt "#30040"
+msgid "Installing ntfs-3g..."
+msgstr ""
+
+msgctxt "#30041"
+msgid "Installing exfat-fuse..."
+msgstr ""
+
+msgctxt "#30042"
+msgid "Base requirements missing"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Link media to base folder"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Base folder for media (usually /media)"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Automatically link media to kodi database"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Default folder for movies"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Default folder for music"
+msgstr ""
+
+msgctxt "#30048"
+msgid "Default folder for pictures"
+msgstr ""
+
+msgctxt "#30049"
+msgid "Default folder for musicvideos"
+msgstr ""
+
+msgctxt "#30050"
+msgid "Note: if enabled folders will be checked/created and"
+msgstr ""
+
+msgctxt "#30051"
+msgid "the kodi sources.xml will be replaced with configured values!"
+msgstr ""
+
+msgctxt "#30052"
+msgid "Automount is active. No manually mount / unmount is possible!"
+msgstr ""
+
+msgctxt "#30053"
+msgid "No removeable mass storage devices detected."
+msgstr ""
+
+msgctxt "#30054"
+msgid "Installing hfsplus..."
+msgstr ""
+
+msgctxt "#30055"
+msgid "Installing hfsprogs..."
+msgstr ""
+
+msgctxt "#30056"
+msgid "Installing hfsutils..."
+msgstr ""
+
+msgctxt "#30057"
+msgid "Removing gvfs..."
+msgstr ""
+
+msgctxt "#30058"
+msgid "Automatically mount usb mass storage"
+msgstr ""

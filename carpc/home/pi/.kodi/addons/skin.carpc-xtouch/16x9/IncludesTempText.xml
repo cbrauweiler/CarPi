@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Display Temp-Sensor Output  -->
+
+<includes>	
+	<include name="TempText1">
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>50</left>
+			<top>20</top>
+			<width>610</width>
+			<height>55</height>
+				<control type="label">
+					<description>Temp Top Left</description>
+					<posx>45</posx>
+					<posy>10</posy>
+					<height>40</height>
+					<width min="100" max="500">auto</width>
+					<label>[B]$INFO[Window(Home).Property(field1)]: $INFO[Window(Home).Property(Temp1)] $INFO[Window(Home).Property(Text1)]  [/B]</label> 
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
+                    <shadowcolor>black</shadowcolor>
+				</control> 
+				<control type="image">
+					<description>Temp Trend</description>
+					<left>20</left>
+					<posy>16</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>$INFO[Window(Home).Property(Trend1)]</texture>
+				</control>
+		</control>
+	</include>    
+	<include name="TempText2">
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>50</left>
+			<top>20</top>
+			<width>610</width>
+			<height>55</height>
+				<control type="label">
+					<description>Temp Top Left</description>
+					<posx>45</posx>
+					<posy>10</posy>
+					<height>40</height>
+					<width min="100" max="500">auto</width>
+					<label>[B]$INFO[Window(Home).Property(field2)]: $INFO[Window(Home).Property(Temp2)] $INFO[Window(Home).Property(Text2)]  [/B]</label> 
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
+                    <shadowcolor>black</shadowcolor>
+				</control> 
+				<control type="image">
+					<description>Temp Trend</description>
+					<left>20</left>
+					<posy>16</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>$INFO[Window(Home).Property(Trend2)]</texture>
+				</control>
+		</control>
+	</include> 	
+	<include name="TempText3">
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>50</left>
+			<top>20</top>
+			<width>610</width>
+			<height>55</height>
+				<control type="label">
+					<description>Temp Top Left</description>
+					<posx>45</posx>
+					<posy>10</posy>
+					<height>40</height>
+					<width min="100" max="500">auto</width>
+					<label>[B]$INFO[Window(Home).Property(field3)]: $INFO[Window(Home).Property(Temp3)] $INFO[Window(Home).Property(Text3)]  [/B]</label> 
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
+                    <shadowcolor>black</shadowcolor>
+				</control> 
+				<control type="image">
+					<description>Temp Trend</description>
+					<left>20</left>
+					<posy>16</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>$INFO[Window(Home).Property(Trend3)]</texture>
+				</control>
+		</control>
+	</include> 
+	<include name="TempText4">
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>50</left>
+			<top>20</top>
+			<width>610</width>
+			<height>55</height>
+				<control type="label">
+					<description>Temp Top Left</description>
+					<posx>45</posx>
+					<posy>10</posy>
+					<height>40</height>
+					<width min="100" max="500">auto</width>
+					<label>[B]$INFO[Window(Home).Property(field4)]: $INFO[Window(Home).Property(Temp4)] $INFO[Window(Home).Property(Text4)]  [/B]</label> 
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
+                    <shadowcolor>black</shadowcolor>
+				</control> 
+				<control type="image">
+					<description>Temp Trend</description>
+					<left>20</left>
+					<posy>16</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>$INFO[Window(Home).Property(Trend4)]</texture>
+				</control>
+		</control>
+	</include> 
+	<include name="TempText5">
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>50</left>
+			<top>20</top>
+			<width>610</width>
+			<height>55</height>
+				<control type="label">
+					<description>Temp Top Left</description>
+					<posx>45</posx>
+					<posy>10</posy>
+					<height>40</height>
+					<width min="100" max="500">auto</width>
+					<label>[B]$INFO[Window(Home).Property(field5)]: $INFO[Window(Home).Property(Temp5)] $INFO[Window(Home).Property(Text5)]  [/B]</label> 
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
+                    <shadowcolor>black</shadowcolor>
+				</control> 
+				<control type="image">
+					<description>Temp Trend</description>
+					<left>20</left>
+					<posy>16</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>$INFO[Window(Home).Property(Trend5)]</texture>
+				</control>
+		</control>
+	</include> 
+	<include name="TempText6">
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>50</left>
+			<top>20</top>
+			<width>610</width>
+			<height>55</height>
+				<control type="label">
+					<description>Temp Top Left</description>
+					<posx>45</posx>
+					<posy>10</posy>
+					<height>40</height>
+					<width min="100" max="500">auto</width>
+					<label>[B]$INFO[Window(Home).Property(field6)]: $INFO[Window(Home).Property(Temp6)] $INFO[Window(Home).Property(Text6)]  [/B]</label> 
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
+                    <shadowcolor>black</shadowcolor>
+				</control> 
+				<control type="image">
+					<description>Temp Trend</description>
+					<left>20</left>
+					<posy>16</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>$INFO[Window(Home).Property(Trend6)]</texture>
+				</control>
+		</control>
+	</include> 
+	<include name="TempText7">
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>50</left>
+			<top>20</top>
+			<width>610</width>
+			<height>55</height>
+				<control type="label">
+					<description>Temp Top Left</description>
+					<posx>45</posx>
+					<posy>10</posy>
+					<height>40</height>
+					<width min="100" max="500">auto</width>
+					<label>[B]$INFO[Window(Home).Property(field7)]: $INFO[Window(Home).Property(Temp7)] $INFO[Window(Home).Property(Text7)]  [/B]</label> 
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
+                    <shadowcolor>black</shadowcolor>
+				</control> 
+				<control type="image">
+					<description>Temp Trend</description>
+					<left>20</left>
+					<posy>16</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>$INFO[Window(Home).Property(Trend7)]</texture>
+				</control>
+		</control>
+	</include> 
+	<include name="TempText8">
+		<control type="grouplist">
+			<orientation>horizontal</orientation>
+			<left>50</left>
+			<top>20</top>
+			<width>610</width>
+			<height>55</height>
+				<control type="label">
+					<description>Temp Top Left</description>
+					<posx>45</posx>
+					<posy>10</posy>
+					<height>40</height>
+					<width min="100" max="500">auto</width>
+					<label>[B]$INFO[Window(Home).Property(field8)]: $INFO[Window(Home).Property(Temp8)] $INFO[Window(Home).Property(Text8)]  [/B]</label> 
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font30</font>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
+                    <shadowcolor>black</shadowcolor>
+				</control> 
+				<control type="image">
+					<description>Temp Trend</description>
+					<left>20</left>
+					<posy>16</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>$INFO[Window(Home).Property(Trend8)]</texture>
+				</control>
+		</control>
+	</include> 
+</includes>

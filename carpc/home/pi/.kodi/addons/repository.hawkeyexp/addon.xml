@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.hawkeyexp" name="Hawkeyexp's Repo-Index" version="1.0.3" provider-name="Marc Hillesheim">
+    <extension point="xbmc.addon.repository" name="Hawkeyexp's Repo">
+	<info compressed="true">https://raw.githubusercontent.com/hawkeyexp/Kodi-Repository-Nextgen/master/addons.xml</info>
+	<checksum>https://raw.githubusercontent.com/hawkeyexp/Kodi-Repository-Nextgen/master/addons.xml.md5</checksum>
+	<datadir zip="true">https://raw.githubusercontent.com/hawkeyexp/Kodi-Repository-Nextgen/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+	<summary>Hawkeyexp's Repo</summary>
+	<summary lang="en">Hawkeyexp's Repo</summary>
+	<description>Repository from Hawkeyexp</description>
+	<platform>all</platform>
+    </extension>
+</addon>

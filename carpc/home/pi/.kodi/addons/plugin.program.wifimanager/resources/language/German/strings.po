@@ -1,0 +1,205 @@
+# Kodi Media Center language file
+# Addon Name: WiFi Manager
+# Addon id: plugin.program.wifimanager
+# Addon Provider: Marc Hillesheim
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Scanning..."
+msgstr "Netzwerksuche..."
+
+msgctxt "#30001"
+msgid "Change entry?"
+msgstr "Eintrag ändern?"
+
+msgctxt "#30002"
+msgid "Do you want to change this entry?"
+msgstr "Wollen Sie diesen Eintrag ändern?"
+
+msgctxt "#30003"
+msgid "Select network..."
+msgstr "Netzwerk auswählen..."
+
+msgctxt "#30004"
+msgid "Password - Empty for abort!"
+msgstr "Passwort - leer zum Abbrechen!"
+
+msgctxt "#30005"
+msgid "Interface wlan0 is not available!"
+msgstr "Die Schnittstelle wlan0 ist nicht verfügbar!"
+
+msgctxt "#30006"
+msgid "System is in host mode. Hostapd is running!"
+msgstr "Das System ist im Host-Modus. Hostapd läuft!"
+
+msgctxt "#30007"
+msgid "Error"
+msgstr "Fehler"
+
+msgctxt "#30008"
+msgid "System command is missing!"
+msgstr "Ein Systembefehl fehlt!"
+
+msgctxt "#30009"
+msgid "Install missing requirements?"
+msgstr "Fehlende Voraussetzungen installieren?"
+
+msgctxt "#30010"
+msgid "Enable AP mode (check and install needed packages/files)"
+msgstr "Aktiviere AP-Modus (Prüfe und installiere notwendige Pakete/Dateien)"
+
+msgctxt "#30011"
+msgid "Installation von hostapd failed"
+msgstr "Die Installation von hostapd ist fehlgeschlagen"
+
+msgctxt "#30012"
+msgid "Installation von dnsmasq failed"
+msgstr "Die Installation von dnsmasq ist fehlgeschlagen"
+
+msgctxt "#30013"
+msgid "Installing hostapd..."
+msgstr "Installiere hostapd..."
+
+msgctxt "#30014"
+msgid "Installing dnsmasq..."
+msgstr "Installiere dnsmasq..."
+
+msgctxt "#30015"
+msgid "Updating package database..."
+msgstr "Aktualisiere Paket-Datenbank..."
+
+msgctxt "#30016"
+msgid "SSID"
+msgstr "SSID"
+
+msgctxt "#30017"
+msgid "Password"
+msgstr "Passwort"
+
+msgctxt "#30018"
+msgid "The addon is only working on Raspbian GNU/Linux!"
+msgstr "Das Addon funktioniert nur unter Raspbian GNU/Linux!"
+
+msgctxt "#30019"
+msgid "System is not ready for ap mode!"
+msgstr "System ist nicht bereit für den AP-Modus!"
+
+msgctxt "#30020"
+msgid "Do you want to install and configure needed packages/files?"
+msgstr "Die fehlenden Pakete/Dateien installieren und konfigurieren?"
+
+msgctxt "#30021"
+msgid "Please wait!"
+msgstr "Bitte warten!"
+
+msgctxt "#30022"
+msgid "Switch to client mode"
+msgstr "Umschalten auf Client-Modus"
+
+msgctxt "#30023"
+msgid "Switch to access point"
+msgstr "Umschalten auf Access-Point"
+
+msgctxt "#30024"
+msgid "Switching mode - Please wait..."
+msgstr "Betriebsmodus umschalten - Bitte warten..."
+
+msgctxt "#30025"
+msgid "Internet connection: ok"
+msgstr "Internetverbindung: ok"
+
+msgctxt "#30026"
+msgid "No internet connection - installation not possible!"
+msgstr "Internetverbindung fehlt - Keine Installation möglich!"
+
+msgctxt "#30027"
+msgid "Configure hostapd..."
+msgstr "Hostapd konfigurieren..."
+
+msgctxt "#30028"
+msgid "Configure dnsmasq..."
+msgstr "Dnsmasq  konfigurieren..."
+
+msgctxt "#30029"
+msgid "Delete?"
+msgstr "Löschen?"
+
+msgctxt "#30030"
+msgid "Are you sure you want to delete this entry?"
+msgstr "Wollen Si diesen Eintrag wirklich löschen?"
+
+msgctxt "#30031"
+msgid "Restart?"
+msgstr "Neustart?"
+
+msgctxt "#30032"
+msgid "Restart the service?"
+msgstr "Den Dienst neu starten?"
+
+msgctxt "#30033"
+msgid "Warning"
+msgstr "Warnung"
+
+msgctxt "#30034"
+msgid "This is not a RPi3."
+msgstr "Dies ist kein RPi3."
+
+msgctxt "#30035"
+msgid "The addon possible won't work coreectly."
+msgstr "Das Addon arbeitet möglicherweise fehlerhaft."
+
+msgctxt "#30036"
+msgid "Warning if no RPi3 is detected"
+msgstr "Warnen wenn kein RPi3 erkannt wurde"
+
+msgctxt "#30037"
+msgid "Enable support for Realtek chips"
+msgstr "Aktiviere Unterstützung von Realtek-Chips"
+
+msgctxt "#30038"
+msgid "Support for realtek chips in settings."
+msgstr "Unterstützung für Realtek-Chips in den Einstellungen."
+
+msgctxt "#30039"
+msgid "Config update"
+msgstr "Konfigurationsupdate"
+
+msgctxt "#30040"
+msgid "Installing wpasupplicant..."
+msgstr "Installiere wpasupplicant..."
+
+msgctxt "#30041"
+msgid "Installing wireless-tools..."
+msgstr "Installiere wireless-tools..."
+
+msgctxt "#30042"
+msgid "Base requirements missing"
+msgstr "Grundvoraussetzungen nicht erfüllt"
+
+msgctxt "#30043"
+msgid "This is a RPi3. Realtek support is not needed!"
+msgstr "Dies ist ein RPi3. Realtek-Support ist nicht notwendig!"
+
+msgctxt "#30044"
+msgid "The setting is set to disabled now."
+msgstr "Die Einstellung wurde daktiviert."
+
+msgctxt "#30045"
+msgid "Enable ap mode on system startup"
+msgstr "Aktiviere AP-Mode beim Systemstart"
+
+msgctxt "#30046"
+msgid "Wifi is offline"
+msgstr "Wlan ist nicht verbunden"

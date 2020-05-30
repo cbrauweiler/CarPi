@@ -1,0 +1,78 @@
+
+<!-- Current time -->
+<osd enabled="yes" type="text" label="${vehicle.position_time_iso8601[local;%H:%M:%S]}" x="-180" y="0" font_size="600" w="180" h="50" align="8" background_color="#00000099"/>
+<!-- GPS status -->
+<osd enabled="yes" type="gps_status" x="-230" y="0" w="50" h="50" background_color="#00000099"/>
+<!-- Satellites -->
+<osd enabled="yes" type="text" label="${vehicle.position_sats_signal}/${vehicle.position_qual}" x="-340" y="0" font_size="600" w="110" h="50" align="0" background_color="#00000099"/>
+<!--Street name-->
+<osd enabled="yes" type="text" label="On ${navigation.item.street_name}" x="0" y="0" font_size="600" w="940" h="50" align="4" background_color="#00000099"/>
+
+<!-- Zoom in -->
+<osd enabled="yes" type="button" x="0" y="50" command="zoom_in()" src="gui_zoom_in_96_96.png"/>
+<!-- Zoom out -->
+<osd enabled="yes" type="button" x="0" y="146" command="zoom_out()" src="gui_zoom_out_96_96.png"/>
+<!-- Switch 3D and 2D, orientation north, autozoom and when switching to 2D, zooms out to whole route -->
+<osd enabled="yes" type="button" x="0" y="242" command="pitch=pitch==0?15:0" src="gui_map_92_92.png"/>
+<!--Speech toggle-->
+<osd name="my_speech_status" enabled="yes" type="button" src="gui_sound_96_96.png" x="0" y="334" command='speech.active=!speech.active;osd[@name=="my_speech_status"].src = speech.active==0?"gui_sound_off_96_96.png":"gui_sound_96_96.png"'/>
+
+
+<!-- ETA  -->
+<osd enabled="yes" type="text" label="ETA: ${navigation.item.destination_time[arrival]}" x="-210" y="50" font_size="600" w="210" h="50" align="8" background_color="#00000099"  osd_configuration="8192"/>
+<!-- Distance to and type of the next turn -->
+<osd enabled="yes" type="text" label="In ${navigation.item[1].length[named]}" x="-210" y="100" font_size="600" w="210" h="50" align="8" background_color="#00000099" osd_configuration="8192"/>
+<osd enabled="yes" type="navigation_next_turn" x="-140" y="150" font_size="500" w="140" h="100" background_color="#00000099" icon_src="$NAVIT_SHAREDIR/xpm/%s_wh_96_96.png" osd_configuration="8192"/>
+<!-- Distance to destination -->
+<osd enabled="no" type="text" label="${navigation.item.destination_length[named]}" x="0" y="250" font_size="600" w="160" h="50" align="4" background_color="#00000099"  osd_configuration="8192"/>
+<!-- Time to destination -->
+<osd enabled="no" type="text" label="${navigation.item.destination_time[remaining]}" x="0" y="300" font_size="600" w="110" h="50" align="4" background_color="#00000099"  osd_configuration="8192"/>
+<!--Quit Navit-->
+<osd enabled="no" type="button" x="0" y="160" command="gui.quit()" src="gui_quit_64_64.png"/>
+
+
+
+
+<!-- GPS speed -->
+<osd enabled="yes" type="speed_warner" w="150" h="150" x="0" y="-250" background_color="#00000099" font_size="600" speed_exceed_limit_offset="15" speed_exceed_limit_percent="15" announce_on="1" osd_configuration="1" />
+<osd enabled="yes" type="text" label="${vehicle.position_speed[value]}km/h" x="0" y="-100" font_size="1000" w="360" h="50" align="4" background_color="#00000099"/>
+
+<!--Scale-->
+<osd enabled="no" x="-340" y="-150" w="200" h="50" font_size="500" type="scale"/>
+
+<!-- Name of the current and next street -->
+<!--osd enabled="yes" type="text" label="Onto ${navigation.item[1].street_name}" x="305" y="0" font_size="500" 
+   w="495" h="40" align="4" background_color="#00000099"/-->
+<!--osd enabled="yes" type="text" label="${navigation.item.street_name}" x="180" y="-60"
+   font_size="500" w="580" h="30" align="0" background_color="#00000099"/-->
+
+<osd name="status" enabled="yes" use_overlay="1" w="102" h="102" type="button" command="" src="$HOME/.navit/buttons/def.png" x="2" y="-213" />
+<!--
+<osd name="status1" h="1" w="1"  update_period="1"  enabled="yes" type="cmd_interface" x="11"  y="416" command='osd[@name=="status"].src = 
+route.route_status==1     ? "$HOME/.navit/buttons/set.png" :
+(route.route_status==0     ? "$HOME/.navit/buttons/def.png" :  
+(route.route_status==3     ? "$HOME/.navit/buttons/no_destination.png" :
+(route.route_status==5     ? "$HOME/.navit/buttons/calculate.png" :
+(route.route_status==13    ? "$HOME/.navit/buttons/calculate.png" :
+(route.route_status==17    ? "$HOME/.navit/buttons/up.png" :
+(route.route_status==33    ? "$HOME/.navit/buttons/route.png" : "unhandled"
+))))))'  />-->
+
+<!--switching between routing and tracking information depending upon routing status -->
+<osd name="cmd_route_status_2" enabled="yes" x="-1" y="-1" w="1" h="1" update_period="2" type="cmd_interface"
+  command='
+    osd_configuration =
+      (route.route_status &amp; 49) >= 17 ?
+        ((osd_configuration &amp; 4) == 0 ?
+          osd_configuration | 24576 :
+          osd_configuration | 8192) &amp; ~ 1536 :
+        (vehicle.position_sats_signal > 2 ?
+          ((osd_configuration &amp; 4) == 0 ?
+            osd_configuration | 1536 :
+            osd_configuration | 512) :
+          osd_configuration &amp; ~ 1536) &amp; ~ 24576 ;
+    osd_configuration =
+      vehicle.position_sats_signal > 2 ?
+        osd_configuration | 8 :
+        osd_configuration &amp; ~ 8
+  '/>

@@ -1,0 +1,145 @@
+# Kodi Media Center language file
+# Addon Name: Skin Widgets
+# Addon id: service.skin.widgets
+# Addon Provider: Martijn|phil65
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "List 1 Left"
+msgstr "Liste 1 Links"
+
+msgctxt "#30001"
+msgid "Station 1"
+msgstr "Station 1"
+
+msgctxt "#30002"
+msgid "Station 2"
+msgstr "Station 2"
+
+msgctxt "#30003"
+msgid "Station 3"
+msgstr "Station 3"
+
+msgctxt "#30004"
+msgid "Station 4"
+msgstr "Station 4"
+
+msgctxt "#30005"
+msgid "Station 5"
+msgstr "Station 5"
+
+msgctxt "#30006"
+msgid "Station 6"
+msgstr "Station 6"
+
+msgctxt "#30007"
+msgid "Station 7"
+msgstr "Station 7"
+
+msgctxt "#30008"
+msgid "Station 8"
+msgstr "Station 8"
+
+msgctxt "#30009"
+msgid "Station 9"
+msgstr "Station 9"
+
+msgctxt "#30010"
+msgid "Station 10"
+msgstr "Station 10"
+
+msgctxt "#30011"
+msgid "Station 11"
+msgstr "Station 11"
+
+msgctxt "#30012"
+msgid "Station 12"
+msgstr "Station 12"
+
+msgctxt "#30013"
+msgid "Station 13"
+msgstr "Station 13"
+
+msgctxt "#30014"
+msgid "Station 14"
+msgstr "Station 14"
+
+msgctxt "#30015"
+msgid "Station 15"
+msgstr "Station 15"
+
+msgctxt "#30016"
+msgid "Station 16"
+msgstr "Station 16"
+
+msgctxt "#30017"
+msgid "Station 17"
+msgstr "Station 17"
+
+msgctxt "#30018"
+msgid "Station 18"
+msgstr "Station 18"
+
+msgctxt "#30019"
+msgid "Station 19"
+msgstr "Station 19"
+
+msgctxt "#30020"
+msgid "Station 20"
+msgstr "Station 20"
+
+msgctxt "#30021"
+msgid "List 2 Left"
+msgstr "Liste 2 Links"
+
+msgctxt "#30022"
+msgid "Path to custom background image"
+msgstr "Pfad zum eigenen Hintergrund"
+
+msgctxt "#30023"
+msgid "List 2 Right"
+msgstr "Liste 2 Rechts"
+
+msgctxt "#30024"
+msgid "List 1 Right"
+msgstr "Liste 1 Rechts"
+
+msgctxt "#30025"
+msgid "Use Custom Background"
+msgstr "Eigenen Hintergrund benutzen"
+
+msgctxt "#30026"
+msgid "Show Station Logos"
+msgstr "Zeige Senderlogos"
+
+msgctxt "#30027"
+msgid "Path to station logos"
+msgstr "Pfad zu den Senderlogos"
+
+msgctxt "#30028"
+msgid "Show Radiotext"
+msgstr "Zeige Radiotext"
+
+msgctxt "#30029"
+msgid "Warning"
+msgstr "Warnung"
+
+msgctxt "#30030"
+msgid "Helper for Radio Nextgen detected which is not longer needed."
+msgstr "Helper für Radio Nextgen erkannt - wird nicht länger benötigt."
+
+msgctxt "#30031"
+msgid "Please first remove the helper addon!"
+msgstr "Bitte zuerst deinstallieren!"

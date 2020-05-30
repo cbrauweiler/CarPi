@@ -1,0 +1,145 @@
+# Kodi Media Center language file
+# Addon Name: Skin Widgets
+# Addon id: service.skin.widgets
+# Addon Provider: Martijn|phil65
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "List 1 Left"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Station 1"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Station 2"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Station 3"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Station 4"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Station 5"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Station 6"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Station 7"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Station 8"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Station 9"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Station 10"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Station 11"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Station 12"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Station 13"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Station 14"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Station 15"
+msgstr ""
+
+msgctxt "#30016"
+msgid "Station 16"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Station 17"
+msgstr ""
+
+msgctxt "#30018"
+msgid "Station 18"
+msgstr ""
+
+msgctxt "#30019"
+msgid "Station 19"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Station 20"
+msgstr ""
+
+msgctxt "#30021"
+msgid "List 2 Left"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Path to custom background image"
+msgstr ""
+
+msgctxt "#30023"
+msgid "List 2 Right"
+msgstr ""
+
+msgctxt "#30024"
+msgid "List 1 Right"
+msgstr ""
+
+msgctxt "#30025"
+msgid "Use Custom Background"
+msgstr ""
+
+msgctxt "#30026"
+msgid "Show Station Logos"
+msgstr ""
+
+msgctxt "#30027"
+msgid "Path to station logos"
+msgstr ""
+
+msgctxt "#30028"
+msgid "Show Radiotext"
+msgstr ""
+
+msgctxt "#30029"
+msgid "Warning"
+msgstr ""
+
+msgctxt "#30030"
+msgid "Helper for Radio Nextgen detected which is not longer needed."
+msgstr ""
+
+msgctxt "#30031"
+msgid "Please first remove the helper addon!"
+msgstr ""

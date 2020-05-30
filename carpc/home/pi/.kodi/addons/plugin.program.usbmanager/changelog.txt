@@ -1,0 +1,15 @@
+
+[B]0.0.5[/B] (2016-11-25)
+- prepare for new skin
+
+[B]0.0.4[/B] (2016-11-08)
+- split auto mount and auto link
+
+[B]0.0.3[/B] (2016-11-08)
+- include auto mount and linking
+
+[B]0.0.2[/B] (2016-11-05)
+- improvements
+
+[B]0.0.1[/B] (2016-11-02)
+- First release

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.wifimanager" name="WiFi Manager" version="0.2.0" provider-name="Marc Hillesheim">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>linux</platform>
+        <summary lang="en">WiFi Manager plugin</summary>
+        <description lang="en">WiFi Manager plugin for the Raspberry Pi</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>www.raspicarproject.de/showthread.php?tid=915</forum>
+        <email>hawkeyexp@gmail.com</email>
+    </extension>
+</addon>

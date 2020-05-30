@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Start gpsd
+#sudo killall gpsd
+#sudo chmod a+r /dev/ttyUSB0
+#gpsd /dev/ttyUSB0
+
+# Start Navit with a low priority
+navit &
+#/usr/bin/7ways_starter.sh &
+
+cd /opt/carpc/startup/
+./StartCarPC_stage2 &

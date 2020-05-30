@@ -1,0 +1,1132 @@
+<window id="1200">
+	<defaultcontrol always="true">1203</defaultcontrol>
+	<controls>
+	    <include>Window_OpenClose_Animation_Zoom</include>
+	    <include>CommonBackground</include>
+	    <control type="image">
+		    <include>Window_OpenClose_Animation_Slide_Down</include>
+		    <posx>0</posx>
+		    <posy>0</posy>
+		    <width>ScreenWidth</width>
+		    <height>80</height>
+		    <texture>wifiman_topbar.png</texture>
+	    </control>
+	    <control type="image">
+		    <include>Window_OpenClose_Animation_Zoom</include>
+		    <visible>substring(Window(Home).Property(hostapdactive),true)</visible>
+		    <visible>substring(Window(Home).Property(install),false)</visible>
+		    <visible>substring(Window(Home).Property(switching),false)</visible>
+		    <posx>0</posx>
+		    <posy>0</posy>
+		    <width>ScreenWidth</width>
+		    <height>ScreenHeight</height>
+		    <texture>wifiman_apmode.png</texture>
+	    </control>
+	    <control type="image">
+		    <include>Window_OpenClose_Animation_Slide_Up</include>
+		    <posx>0</posx>
+		    <posy>630</posy>
+		    <width>ScreenWidth</width>
+		    <height>90</height>
+		    <texture>wifiman_bottombar.png</texture>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+		<visible>substring(Window(Home).Property(startup),false)</visible>
+		<posx>1280</posx>
+		<posy>0</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="label">
+			<description>ip</description>
+			<posx>8r</posx>
+			<posy>0</posy>
+			<height>80</height>
+			<width>440</width>
+            		<label>[B]$INFO[Window(Home).Property(ipaddress)][/B]</label>
+			<align>right</align>
+			<aligny>center</aligny>
+			<font>font30_title</font>
+			<textcolor>FFFFFFFF</textcolor>		
+		</control>
+	    </control>
+
+	    <control type="button" id="1203">
+		    <description>Dummy Focus Button</description>
+		    <posx>-1</posx>
+		    <posy>-1</posy>
+		    <width>1</width>
+		    <height>1</height>
+		    <font>-</font>
+		    <texturenofocus border="5">wifiman_overlay.png</texturenofocus>
+		    <texturefocus border="5">wifiman_overlay.png</texturefocus>
+		    <onup>1202</onup>
+		    <ondown>1201</ondown>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<posx>0</posx>
+		<posy>0</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1201">
+			<description>Home Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>75</width>
+			<height>75</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">wifiman_floor_buttonFO.png</texturefocus>
+			<onclick>ActivateWindow(Home)</onclick>
+			<onup>1203</onup>
+			<ondown>1205</ondown>
+		</control>
+		<control type="image">
+			<description>Home Button Image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>70</width>
+			<height>70</height>
+			<texture>wifiman_icon_home.png</texture>
+		</control>
+		<control type="label">
+			<description>Title</description>
+			<posx>100</posx>
+			<posy>0</posy>
+			<width>350</width>
+			<font>font30_title</font>
+			<height>80</height>
+			<aligny>center</aligny>
+			<label>WiFi Manager</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<posx>258r</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1202">
+			<description>Back Button</description>
+			<posx>172</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">wifiman_floor_buttonFO.png</texturefocus>
+			<onclick>ParentDir</onclick>
+			<onup condition="substring(Window(Home).Property(showifup),true)">1214</onup>
+			<onup condition="substring(Window(Home).Property(showifdown),true)">1213</onup>
+			<onup condition="substring(Window(Home).Property(hostapdactive),true) + substring(Window(Home).Property(showifup),false) + substring(Window(Home).Property(showifdown),false)">1211</onup>
+			<ondown>1203</ondown>
+		</control>
+		<control type="image">
+			<description>Back Button Image</description>
+			<posx>180</posx>
+			<posy>8</posy>
+			<width>64</width>
+			<height>64</height>
+			<texture>wifiman_icon_back_w.png</texture>
+		</control>
+		<control type="button" id="1213">
+			<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+			<visible>substring(Window(Home).Property(install),false)</visible>
+			<visible>substring(Window(Home).Property(switching),false)</visible>
+			<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+			<visible>substring(Window(Home).Property(startup),false)</visible>
+			<visible>substring(Window(Home).Property(showifdown),true)</visible>
+			<description>Disable wifi Button</description>
+			<posx>82</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">wifiman_floor_buttonFO.png</texturefocus>
+			<onup>1210</onup>
+			<ondown>1202</ondown>
+		</control>
+		<control type="image">
+			<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+			<visible>substring(Window(Home).Property(install),false)</visible>
+			<visible>substring(Window(Home).Property(switching),false)</visible>
+			<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+			<visible>substring(Window(Home).Property(startup),false)</visible>
+			<visible>substring(Window(Home).Property(showifdown),true)</visible>
+			<description>Disable wifi Button Image</description>
+			<posx>94</posx>
+			<posy>10</posy>
+			<width>60</width>
+			<height>60</height>
+			<texture>wifiman_icon_down.png</texture>
+		</control>
+
+		<control type="button" id="1214">
+			<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+			<visible>substring(Window(Home).Property(install),false)</visible>
+			<visible>substring(Window(Home).Property(switching),false)</visible>
+			<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+			<visible>substring(Window(Home).Property(startup),false)</visible>
+			<visible>substring(Window(Home).Property(showifup),true)</visible>
+			<description>Enable wifi Button</description>
+			<posx>82</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">wifiman_floor_buttonFO.png</texturefocus>
+			<onup>1210</onup>
+			<ondown>1202</ondown>
+		</control>
+		<control type="image">
+			<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+			<visible>substring(Window(Home).Property(install),false)</visible>
+			<visible>substring(Window(Home).Property(switching),false)</visible>
+			<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+			<visible>substring(Window(Home).Property(startup),false)</visible>
+			<visible>substring(Window(Home).Property(showifup),true)</visible>
+			<description>Enable wifi Button Image</description>
+			<posx>94</posx>
+			<posy>10</posy>
+			<width>60</width>
+			<height>60</height>
+			<texture>wifiman_icon_up.png</texture>
+		</control>
+
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<visible>substring(Window(Home).Property(startup),false)</visible>
+		<posx>0</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1204">
+			<description>Settings Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">wifiman_floor_buttonFO.png</texturefocus>
+			<onup>1208</onup>
+			<ondown condition="substring(Window(Home).Property(hostapdactive),false)">1210</ondown>
+			<ondown condition="substring(Window(Home).Property(hostapdactive),true)">1209</ondown>
+		</control>
+		<control type="image">
+			<description>Settings Button Image</description>
+			<posx>8</posx>
+			<posy>8</posy>
+			<width>64</width>
+			<height>64</height>
+			<texture>wifiman_icon_settings_w.png</texture>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<visible>substring(Window(Home).Property(wifiavailable),false)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<visible>substring(Window(Home).Property(startup),false)</visible>
+		<posx>0</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1209">
+			<description>Wifi Button</description>
+			<posx>340</posx>
+			<posy>0</posy>
+			<width>600</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">wifiman_floor_buttonFO.png</texturefocus>
+			<onup>1201</onup>
+			<ondown>1212</ondown>
+		</control>
+        	<control type="label">
+			<description>Wifi Button</description>
+            		<posx>340</posx>
+            		<posy>0</posy>
+            		<width>600</width>
+            		<height>82</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.wifimanager 30022][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<visible>substring(Window(Home).Property(wifiavailable),true)</visible>
+		<visible>substring(Window(Home).Property(apmodepossible),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<visible>substring(Window(Home).Property(startup),false)</visible>
+		<posx>0</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1210">
+			<description>APMode Button</description>
+			<posx>340</posx>
+			<posy>0</posy>
+			<width>600</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">wifiman_floor_buttonFO.png</texturefocus>
+			<onup>1204</onup>
+			<ondown condition="substring(Window(Home).Property(showifup),false)">1213</ondown>
+			<ondown condition="substring(Window(Home).Property(showifdown),false)">1214</ondown>
+		</control>
+        	<control type="label">
+			<description>APMode Button</description>
+            		<posx>340</posx>
+            		<posy>0</posy>
+            		<width>600</width>
+            		<height>82</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.wifimanager 30023][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>Scanlist</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(wifiavailable),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<visible>substring(Window(Home).Property(clientoffline),false)</visible>
+		<posx>720</posx>
+		<posy>98</posy>
+		<control type="image">
+			<description>Background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>450</width>
+			<height>512</height>
+			<texture>wifiman_bgscanlist.png</texture>
+		</control>
+        	<control type="label">
+			<description>scanresult1</description>
+            		<posx>40</posx>
+            		<posy>40</posy>
+            		<width>440</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>$INFO[Window(Home).Property(textcolor1)]</textcolor>
+            		<align>left</align>
+            		<label>[B]$INFO[Window(Home).Property(scanlist1)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>scanresult2</description>
+            		<posx>40</posx>
+            		<posy>100</posy>
+            		<width>440</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>$INFO[Window(Home).Property(textcolor2)]</textcolor>
+            		<align>left</align>
+            		<label>[B]$INFO[Window(Home).Property(scanlist2)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>scanresult3</description>
+            		<posx>40</posx>
+            		<posy>160</posy>
+            		<width>440</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>$INFO[Window(Home).Property(textcolor3)]</textcolor>
+            		<align>left</align>
+            		<label>[B]$INFO[Window(Home).Property(scanlist3)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>scanresult4</description>
+            		<posx>40</posx>
+            		<posy>220</posy>
+            		<width>440</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>$INFO[Window(Home).Property(textcolor4)]</textcolor>
+            		<align>left</align>
+            		<label>[B]$INFO[Window(Home).Property(scanlist4)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>scanresult4</description>
+            		<posx>40</posx>
+            		<posy>280</posy>
+            		<width>440</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>$INFO[Window(Home).Property(textcolor5)]</textcolor>
+            		<align>left</align>
+            		<label>[B]$INFO[Window(Home).Property(scanlist5)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>scanresult6</description>
+            		<posx>40</posx>
+            		<posy>340</posy>
+            		<width>440</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>$INFO[Window(Home).Property(textcolor6)]</textcolor>
+            		<align>left</align>
+            		<label>[B]$INFO[Window(Home).Property(scanlist6)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>scanresult7</description>
+            		<posx>40</posx>
+            		<posy>400</posy>
+            		<width>440</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>$INFO[Window(Home).Property(textcolor7)]</textcolor>
+            		<align>left</align>
+            		<label>[B]$INFO[Window(Home).Property(scanlist7)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>scanresult8</description>
+            		<posx>40</posx>
+            		<posy>460</posy>
+            		<width>440</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>$INFO[Window(Home).Property(textcolor8)]</textcolor>
+            		<align>left</align>
+            		<label>[B]$INFO[Window(Home).Property(scanlist8)][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>Network1</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(showconfig1),true)</visible>
+		<visible>substring(Window(Home).Property(wifiavailable),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<posx>125</posx>
+		<posy>100</posy>
+		<control type="button" id="1205">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>290</width>
+			<height>250</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_bg.png</texturenofocus>
+			<texturefocus border="5">wifiman_bgFO.png</texturefocus>
+			<onup>1201</onup>
+			<ondown>1206</ondown>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>50</posy>
+            		<width>290</width>
+            		<height>50</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(storednet1)]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>100</posy>
+            		<width>290</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(storedstate1)]</label>
+		</control>
+		<control type="image">
+			<description>Icon</description>
+			<posx>120</posx>
+			<posy>150</posy>
+			<width>50</width>
+			<height>50</height>
+			<texture>$INFO[Window(Home).Property(storedneticon1)]</texture>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>Network2</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(showconfig2),true)</visible>
+		<visible>substring(Window(Home).Property(wifiavailable),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<posx>420</posx>
+		<posy>100</posy>
+		<control type="button" id="1206">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>290</width>
+			<height>250</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_bg.png</texturenofocus>
+			<texturefocus border="5">wifiman_bgFO.png</texturefocus>
+			<onup>1205</onup>
+			<ondown>1207</ondown>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>50</posy>
+            		<width>290</width>
+            		<height>50</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(storednet2)]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>100</posy>
+            		<width>290</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(storedstate2)]</label>
+		</control>
+		<control type="image">
+			<description>Icon</description>
+			<posx>120</posx>
+			<posy>150</posy>
+			<width>50</width>
+			<height>50</height>
+			<texture>$INFO[Window(Home).Property(storedneticon2)]</texture>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>Network3</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(showconfig3),true)</visible>
+		<visible>substring(Window(Home).Property(wifiavailable),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<posx>125</posx>
+		<posy>360</posy>
+		<control type="button" id="1207">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>290</width>
+			<height>250</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_bg.png</texturenofocus>
+			<texturefocus border="5">wifiman_bgFO.png</texturefocus>
+			<onup>1206</onup>
+			<ondown>1208</ondown>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>50</posy>
+            		<width>290</width>
+            		<height>50</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(storednet3)]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>100</posy>
+            		<width>290</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(storedstate3)]</label>
+		</control>
+		<control type="image">
+			<description>Icon</description>
+			<posx>120</posx>
+			<posy>150</posy>
+			<width>50</width>
+			<height>50</height>
+			<texture>$INFO[Window(Home).Property(storedneticon3)]</texture>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>Network4</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(showconfig4),true)</visible>
+		<visible>substring(Window(Home).Property(wifiavailable),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<posx>420</posx>
+		<posy>360</posy>
+		<control type="button" id="1208">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>250</width>
+			<height>250</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_bg.png</texturenofocus>
+			<texturefocus border="5">wifiman_bgFO.png</texturefocus>
+			<onup>1207</onup>
+			<ondown>1204</ondown>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>50</posy>
+            		<width>290</width>
+            		<height>50</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(storednet4)]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>100</posy>
+            		<width>290</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(storedstate4)]</label>
+		</control>
+		<control type="image">
+			<description>Icon</description>
+			<posx>120</posx>
+			<posy>150</posy>
+			<width>50</width>
+			<height>50</height>
+			<texture>$INFO[Window(Home).Property(storedneticon4)]</texture>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>wifinotavailable</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(wifiavailable),false)</visible>
+		<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<visible>substring(Window(Home).Property(startup),false)</visible>
+		<posx>0</posx>
+		<posy>305</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>0</posy>
+            		<width>1280</width>
+            		<height>120</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.wifimanager 30005][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>wificlientdisabled</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(wifiavailable),true)</visible>
+		<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<visible>substring(Window(Home).Property(startup),false)</visible>
+		<visible>substring(Window(Home).Property(clientoffline),true)</visible>
+		<posx>0</posx>
+		<posy>305</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>0</posy>
+            		<width>1280</width>
+            		<height>120</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.wifimanager 30046][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>baserequirements</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(wifiavailable),false)</visible>
+		<visible>substring(Window(Home).Property(hostapdactive),false)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),false)</visible>
+		<posx>0</posx>
+		<posy>305</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>0</posy>
+            		<width>1280</width>
+            		<height>120</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.wifimanager 30042][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>install</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(install),true)</visible>
+		<posx>0</posx>
+		<posy>305</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>0</posy>
+            		<width>1280</width>
+            		<height>80</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.wifimanager 30021][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>80</posy>
+            		<width>1280</width>
+            		<height>80</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(installmessage)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>160</posy>
+            		<width>1280</width>
+            		<height>80</height>
+            		<font>font30</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(commandoutput)][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>switch mode</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(switching),true)</visible>
+		<posx>0</posx>
+		<posy>305</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>0</posy>
+            		<width>1280</width>
+            		<height>120</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.wifimanager 30024][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>80</posy>
+            		<width>1280</width>
+            		<height>80</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(commandoutput)][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>Clientlist</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(hostapdactive),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<posx>15</posx>
+		<posy>120</posy>
+		<control type="image">
+			<description>Background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>400</width>
+			<height>470</height>
+			<texture>wifiman_bgscanlist.png</texture>
+		</control>
+        	<control type="label">
+			<description>header</description>
+            		<posx>0</posx>
+            		<posy>10</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>blue</textcolor>
+            		<align>center</align>
+            		<label>[B]Client[/B]</label>
+		</control>
+        	<control type="label">
+			<description>clientip1</description>
+            		<posx>0</posx>
+            		<posy>50</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(clientip1)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>clientip2</description>
+            		<posx>0</posx>
+            		<posy>110</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(clientip2)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>clientip3</description>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(clientip3)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>clientip4</description>
+            		<posx>0</posx>
+            		<posy>230</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(clientip4)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>clientip5</description>
+            		<posx>0</posx>
+            		<posy>290</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(clientip5)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>clientip6</description>
+            		<posx>0</posx>
+            		<posy>350</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(clientip6)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>clientip7</description>
+            		<posx>0</posx>
+            		<posy>410</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(clientip7)][/B]</label>
+		</control>
+		<control type="image">
+			<description>Background</description>
+			<posx>415</posx>
+			<posy>0</posy>
+			<width>400</width>
+			<height>480</height>
+			<texture>wifiman_bgscanlist.png</texture>
+		</control>
+        	<control type="label">
+			<description>header</description>
+            		<posx>415</posx>
+            		<posy>10</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>blue</textcolor>
+            		<align>center</align>
+            		<label>[B]IP[/B]</label>
+		</control>
+        	<control type="label">
+			<description>client1</description>
+            		<posx>415</posx>
+            		<posy>50</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(client1)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>client2</description>
+            		<posx>415</posx>
+            		<posy>110</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(client2)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>client3</description>
+            		<posx>415</posx>
+            		<posy>170</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(client3)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>client4</description>
+            		<posx>415</posx>
+            		<posy>230</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(client4)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>client5</description>
+            		<posx>415</posx>
+            		<posy>290</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(client5)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>client6</description>
+            		<posx>415</posx>
+            		<posy>350</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(client6)][/B]</label>
+		</control>
+        	<control type="label">
+			<description>client7</description>
+            		<posx>415</posx>
+            		<posy>410</posy>
+            		<width>400</width>
+            		<height>30</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<label>[B]$INFO[Window(Home).Property(client7)][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>hostapd</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(hostapdactive),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<posx>1065</posx>
+		<posy>123</posy>
+		<control type="button" id="1211">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>200</width>
+			<height>200</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_bg.png</texturenofocus>
+			<texturefocus border="5">wifiman_bgFO.png</texturefocus>
+			<onup>1212</onup>
+			<ondown>1202</ondown>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>20</posy>
+            		<width>200</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]Status[/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>70</posy>
+            		<width>200</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]HOSTAPD[/B]</label>
+		</control>
+		<control type="image">
+			<description>Icon</description>
+			<posx>75</posx>
+			<posy>120</posy>
+			<width>50</width>
+			<height>50</height>
+			<texture>$INFO[Window(Home).Property(hostapdicon)]</texture>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>dnsmasq</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(hostapdactive),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<posx>850</posx>
+		<posy>123</posy>
+		<control type="button" id="1212">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>200</width>
+			<height>200</height>
+			<font>-</font>
+			<texturenofocus border="5">wifiman_bg.png</texturenofocus>
+			<texturefocus border="5">wifiman_bgFO.png</texturefocus>
+			<onup>1209</onup>
+			<ondown>1211</ondown>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>20</posy>
+            		<width>200</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]Status[/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>70</posy>
+            		<width>200</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]DNS/DHCP[/B]</label>
+		</control>
+		<control type="image">
+			<description>Icon</description>
+			<posx>75</posx>
+			<posy>120</posy>
+			<width>50</width>
+			<height>50</height>
+			<texture>$INFO[Window(Home).Property(dnsmasqicon)]</texture>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>SSIDInfo</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(hostapdactive),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(switching),false)</visible>
+		<posx>850</posx>
+		<posy>339</posy>
+		<control type="image">
+			<description>Background</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>415</width>
+			<height>250</height>
+			<texture>wifiman_infopanel.png</texture>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>50</posy>
+            		<width>415</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]SSID[/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>110</posy>
+            		<width>415</width>
+            		<height>50</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>$INFO[Window(Home).Property(hotspotssid)]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>415</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(ipaddress)][/B]</label>
+		</control>
+	    </control>
+
+	</controls>
+</window>

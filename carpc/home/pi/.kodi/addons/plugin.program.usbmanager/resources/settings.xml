@@ -1,0 +1,14 @@
+<settings>
+    <category>
+	<!--<setting type="lsep" label="30050" />
+	<setting type="lsep" label="30051" />-->
+	<setting id="automount" type="bool" label="30058" default="false" />
+	<setting id="autolink" type="bool" label="30045" default="false" />
+	<setting id="basefolder" type="folder" label="30044" default="/media/" visible="eq(-1,true)" />
+	<setting id="moviesfolder" subsetting="true" type="text" label="30046" default="Movies" visible="eq(-2,true)" />
+	<setting id="musicfolder" subsetting="true" type="text" label="30047" default="Music" visible="eq(-3,true)" />
+	<setting id="picturesfolder" subsetting="true" type="text" label="30048" default="Pictures" visible="eq(-4,true)" />
+	<setting id="musicvideosfolder" subsetting="true" type="text" label="30049" default="Musicvideos" visible="eq(-5,true)" />
+	<setting id="startupcheck" subsetting="true" type="bool" default="false" visible="false" />
+    </category>
+</settings>

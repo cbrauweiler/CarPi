@@ -1,0 +1,59 @@
+<settings>
+    <category label="30000">
+        <setting id="Station1" type ="text" label="30001" default="- - -" />
+        <setting id="Station3" type ="text" label="30003" default="- - -" />
+        <setting id="Station5" type ="text" label="30005" default="- - -" />
+        <setting id="Station7" type ="text" label="30007" default="- - -" />
+        <setting id="Station9" type ="text" label="30009" default="- - -" />
+    </category>
+    <category label="30024">
+        <setting id="Station2" type ="text" label="30002" default="- - -" />
+        <setting id="Station4" type ="text" label="30004" default="- - -" />
+        <setting id="Station6" type ="text" label="30006" default="- - -" />
+        <setting id="Station8" type ="text" label="30008" default="- - -" />
+        <setting id="Station10" type ="text" label="30010" default="- - -" />
+    </category>
+    <category label="30021">
+        <setting id="Station1b" type ="text" label="30011" default="- - -" />
+        <setting id="Station3b" type ="text" label="30013" default="- - -" />
+        <setting id="Station5b" type ="text" label="30015" default="- - -" />
+        <setting id="Station7b" type ="text" label="30017" default="- - -" />
+        <setting id="Station9b" type ="text" label="30019" default="- - -" />
+    </category>
+    <category label="30023">
+	<setting id="Station2b" type ="text" label="30012" default="- - -" />
+        <setting id="Station4b" type ="text" label="30014" default="- - -" />
+        <setting id="Station6b" type ="text" label="30016" default="- - -" />
+        <setting id="Station8b" type ="text" label="30018" default="- - -" />
+        <setting id="Station10b" type ="text" label="30020" default="- - -" />
+    </category>
+    <category>
+	<setting id="custombackground" type="bool" label="30025" default="false"/>
+	<setting id="custombackgroundimage" type="image" label="30022" default=""/>
+	<setting id="ShowRadiotext" type="bool" label="30028" default="true"/>
+	<setting id="Station1_Freq" type ="number" default="" visible="false" />
+        <setting id="Station2_Freq" type ="number" default="" visible="false" />
+        <setting id="Station3_Freq" type ="number" default="" visible="false" />
+        <setting id="Station4_Freq" type ="number" default="" visible="false" />
+        <setting id="Station5_Freq" type ="number" default="" visible="false" />
+        <setting id="Station6_Freq" type ="number" default="" visible="false" />
+        <setting id="Station7_Freq" type ="number" default="" visible="false" />
+        <setting id="Station8_Freq" type ="number" default="" visible="false" />
+        <setting id="Station9_Freq" type ="number" default="" visible="false" />
+        <setting id="Station10_Freq" type ="number" default="" visible="false" />
+        <setting id="Station1b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station2b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station3b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station4b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station5b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station6b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station7b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station8b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station9b_Freq" type ="number" default="" visible="false" />
+        <setting id="Station10b_Freq" type ="number" default="" visible="false" />
+	<setting id="ShowStationLogos" type="bool" label="30026" default="false"/>
+	<setting id="StationLogosPath" type="folder" label="30027" default="/media/logos"/>
+	<setting id="muted" type="bool" default="false" visible="false" />
+	<setting id="storedvolume" type="number" default="20" visible="false" />
+    </category>
+</settings>

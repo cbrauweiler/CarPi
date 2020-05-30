@@ -1,0 +1,15 @@
+<navigation>
+	<announce type="street_0,street_1_city" level0="25" level1="100" level2="200" unit="m"/>
+	<announce type="street_2_city,street_3_city,street_4_city,ramp" level0="50" level1="200" level2="500" unit="m"/>
+	<announce type="highway_city,street_1_land,street_2_land,street_3_land,street_4_land" level0="100" level1="400" level2="1000" unit="m"/>
+	<announce type="street_n_lanes,highway_land" level0="300" level1="1000" level2="2000" unit="m"/>
+</navigation>
+
+<!-- Navit provides speech output in text format.
+	If you have a speech synthesizer like festival lite installed, you can get turn by turn directions out of navit. Please set the "cps"-value to how many characters your tts engine approximately speaks per second.
+	The default is text output to the shell -->
+<!--<speech type="cmdline" data="espeak '%s' -ven+f4 -p45 -s120 --stdout | aplay" cps="15"/>-->
+<!--<speech enabled="yes" type="cmdline" data="espeak -ven+f4 '%s' | aplay-" cps="15"/>-->
+<!--<speech type="cmdline" data="%s" cps="10" />-->
+<speech vocabulary_name="0" vocabulary_name_systematic="0" type="cmdline" data="$HOME/.navit/speech.sh %s" cps="10" active="0"/>
+<!-- <speech type="cmdline" data="flite -t '%s'"/> -->

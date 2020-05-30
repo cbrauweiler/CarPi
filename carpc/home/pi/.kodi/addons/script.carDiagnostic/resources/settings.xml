@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+	<setting id="device" label="Device" type="text" default="/dev/rfcomm0" />
+	<setting id="baud" label="Baud" type="text" default="9600"/>
+</settings>
+

@@ -1,0 +1,5 @@
+type=former_destination label="Nogenter Platz"
+mg:0xc3a5b 0x645fa6
+type=former_destination label="Nogenter Platz"
+mg:0xc3a5b 0x645fa5
+# navigation stopped

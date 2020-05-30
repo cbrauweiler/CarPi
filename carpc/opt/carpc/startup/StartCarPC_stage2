@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Set sound output to Analog
+amixer cset numid=3 1
+
+# Set the system volume to 100%
+amixer cset numid=1 100%
+
+# Disable X11 cursor
+#unclutter -display :0 -noevents -grab
+
+# Disable screen blanking
+xset s off         # don't activate screensaver
+xset -dpms         # disable DPMS (Energy Star) features.
+xset s noblank     # don't blank the video device
+
+# Check if kodi is running before starting carpc-controller
+COUNTER=0
+while [ $COUNTER -lt 30 ]
+do
+    CHECK=`ps -ax | grep kodi.bin | grep -v grep`
+    if [ "$CHECK" != "" ]
+    then
+	sleep 8 # give kodi time to finish start
+	killall carpc-controller -9
+	sudo carpc-controller /opt/carpc/config/io_config &
+	COUNTER=30
+    fi
+    sleep 1
+    let COUNTER=COUNTER+1
+done
+
+# Kill possible running bootvideo
+sudo killall -9 omxplayer.bin

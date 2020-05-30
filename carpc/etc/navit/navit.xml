@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE config SYSTEM "navit.dtd">
+<config xmlns:xi="http://www.w3.org/2001/XInclude" language="de_DE">
+	<plugins>
+		<plugin path="$NAVIT_LIBDIR/*/${NAVIT_LIBPREFIX}lib*.so" ondemand="yes"/>
+		<plugin path="$NAVIT_LIBDIR/autoload/${NAVIT_LIBPREFIX}lib*.so"/>
+		<plugin path="$NAVIT_LIBDIR/*/${NAVIT_LIBPREFIX}libbinding_dbus.so" active="no"/>
+		<plugin path="$NAVIT_LIBDIR/*/${NAVIT_LIBPREFIX}libgraphics_null.so" active="no"/>
+	</plugins>
+
+	<navit zoom="8" tracking="1" orientation="-1" recent_dest="250" osd_configuration="1" timeout="1" radius="33" autozoom_active="0">
+		<!--gtk_drawing_area, qt_qpainter, opengl, sdl">-->
+		<graphics type="gtk_drawing_area"/>
+		
+		<!--<xi:include href="$HOME/.navit/xml/gui.xml"/>-->
+		<xi:include href="$HOME/.navit/xml/skins/snaga/gui.xml"/>
+
+		<!--<xi:include href="$HOME/.navit/xml/skins/carpctouch/carpctouch.xml"/>-->
+		<xi:include href="$HOME/.navit/xml/skins/snaga/snaga.xml"/>
+
+		<vehicle name="Car" profilename="car" enabled="yes" active="1" follow="1" source="gpsd://localhost:2947" gpsd_query="w+xj" color="#0000ff" color2="#ffffff"/>
+
+		<!-- For the cumulative displacement filter to be enabled, set cdf_histsize="x" here, with x being an integer somewhere around 4 -->
+		<tracking cdf_histsize="4"/>
+
+		<!--<xi:include href="$HOME/.navit/xml/vehicleprofiles.xml"/>-->
+		<xi:include href="$HOME/.navit/xml/skins/snaga/vehicleprofiles.xml"/>
+
+		<route destination_distance="50"/>
+
+		<xi:include href="$HOME/.navit/xml/announcements.xml"/>
+
+		<!-- Openstreetmaps -->
+		<mapset enabled="yes">
+			<map type="binfile" enabled="yes" data="$HOME/.navit/map1.bin"/>
+		</mapset>
+
+		<!--<xi:include href="$HOME/.navit/xml/layoutcar.xml"/>-->
+		<xi:include href="$HOME/.navit/xml/skins/snaga/layout.xml"/>
+
+		<layout name="Route">
+			<layer name="streets">
+				<itemgra item_types="street_route_occluded" order="0-">
+					<polyline color="#0000a0" width="20"/>
+				</itemgra>
+			</layer>
+		</layout>
+	</navit>
+</config>

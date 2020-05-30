@@ -1,0 +1,1030 @@
+<settings>
+    <accessibility>
+        <audiohearing default="true">false</audiohearing>
+        <audiovisual default="true">false</audiovisual>
+        <subhearing default="true">false</subhearing>
+    </accessibility>
+    <audiocds>
+        <autoaction default="true">0</autoaction>
+        <ejectonrip default="true">true</ejectonrip>
+        <encoder default="true">audioencoder.xbmc.builtin.wav</encoder>
+        <recordingpath default="true"></recordingpath>
+        <trackpathformat default="true">%A/%A - %B/[%N. ][%A - ]%T</trackpathformat>
+        <usecddb default="true">true</usecddb>
+    </audiocds>
+    <audiooutput>
+        <ac3passthrough default="true">true</ac3passthrough>
+        <ac3transcode default="true">false</ac3transcode>
+        <audiodevice default="true">PI:HDMI</audiodevice>
+        <channels default="true">1</channels>
+        <config default="true">2</config>
+        <dtshdpassthrough default="true">false</dtshdpassthrough>
+        <dtspassthrough default="true">false</dtspassthrough>
+        <eac3passthrough default="true">false</eac3passthrough>
+        <guisoundmode default="true">1</guisoundmode>
+        <maintainoriginalvolume default="true">true</maintainoriginalvolume>
+        <passthrough default="true">false</passthrough>
+        <passthroughdevice default="true">PI:HDMI</passthroughdevice>
+        <processquality default="true">101</processquality>
+        <samplerate default="true">48000</samplerate>
+        <stereoupmix default="true">false</stereoupmix>
+        <streamsilence default="true">1</streamsilence>
+        <truehdpassthrough default="true">false</truehdpassthrough>
+    </audiooutput>
+    <cache>
+        <harddisk default="true">256</harddisk>
+    </cache>
+    <cacheaudio>
+        <dvdrom default="true">256</dvdrom>
+        <internet default="true">256</internet>
+        <lan default="true">256</lan>
+    </cacheaudio>
+    <cachedvd>
+        <dvdrom default="true">2048</dvdrom>
+        <lan default="true">2048</lan>
+    </cachedvd>
+    <cacheunknown>
+        <internet default="true">4096</internet>
+    </cacheunknown>
+    <cachevideo>
+        <dvdrom default="true">2048</dvdrom>
+        <internet default="true">4096</internet>
+        <lan default="true">2048</lan>
+    </cachevideo>
+    <debug>
+        <extralogging>false</extralogging>
+        <screenshotpath>/home/pi/Bilder/</screenshotpath>
+        <setextraloglevel default="true">32768</setextraloglevel>
+        <showloginfo default="true">false</showloginfo>
+    </debug>
+    <disc>
+        <playback default="true">0</playback>
+    </disc>
+    <dvds>
+        <automenu default="true">false</automenu>
+        <autorun default="true">false</autorun>
+        <playerregion default="true">0</playerregion>
+    </dvds>
+    <epg>
+        <daystodisplay default="true">3</daystodisplay>
+        <epgupdate default="true">120</epgupdate>
+        <hidenoinfoavailable default="true">true</hidenoinfoavailable>
+        <ignoredbforclient default="true">false</ignoredbforclient>
+        <preventupdateswhileplayingtv default="true">false</preventupdateswhileplayingtv>
+        <selectaction default="true">2</selectaction>
+    </epg>
+    <filelists>
+        <allowfiledeletion default="true">false</allowfiledeletion>
+        <ignorethewhensorting default="true">true</ignorethewhensorting>
+        <showaddsourcebuttons default="true">true</showaddsourcebuttons>
+        <showextensions default="true">true</showextensions>
+        <showhidden default="true">false</showhidden>
+        <showparentdiritems default="true">true</showparentdiritems>
+    </filelists>
+    <general>
+        <addonbrokenfilter default="true">true</addonbrokenfilter>
+        <addonforeignfilter default="true">false</addonforeignfilter>
+        <addonnotifications default="true">true</addonnotifications>
+        <addonupdates default="true">0</addonupdates>
+        <settinglevel>3</settinglevel>
+        <systemtotaluptime>1901</systemtotaluptime>
+    </general>
+    <input>
+        <enablejoystick default="true">true</enablejoystick>
+        <enablemouse default="true">true</enablemouse>
+    </input>
+    <karaoke>
+        <autopopupselector default="true">false</autopopupselector>
+        <charset default="true">DEFAULT</charset>
+        <enabled default="true">false</enabled>
+        <font default="true">arial.ttf</font>
+        <fontcolors default="true">0</fontcolors>
+        <fontheight default="true">36</fontheight>
+    </karaoke>
+    <locale>
+        <audiolanguage default="true">original</audiolanguage>
+        <charset default="true">DEFAULT</charset>
+        <country>Deutschland</country>
+        <keyboardlayouts>German QWERTZ</keyboardlayouts>
+        <language>resource.language.de_de</language>
+        <longdateformat default="true">regional</longdateformat>
+        <shortdateformat default="true">regional</shortdateformat>
+        <speedunit default="true">regional</speedunit>
+        <subtitlelanguage default="true">original</subtitlelanguage>
+        <temperatureunit default="true">regional</temperatureunit>
+        <timeformat default="true">regional</timeformat>
+        <timezone default="true">Europe/Berlin</timezone>
+        <timezonecountry default="true">Germany</timezonecountry>
+        <use24hourclock default="true">regional</use24hourclock>
+    </locale>
+    <lookandfeel>
+        <enablerssfeeds>false</enablerssfeeds>
+        <font default="true">Default</font>
+        <rssedit default="true"></rssedit>
+        <skin>skin.carpc-xtouch</skin>
+        <skincolors default="true">SKINDEFAULT</skincolors>
+        <skintheme default="true">SKINDEFAULT</skintheme>
+        <skinzoom default="true">0</skinzoom>
+        <soundskin default="true">resource.uisounds.confluence</soundskin>
+        <startupwindow default="true">10000</startupwindow>
+    </lookandfeel>
+    <masterlock>
+        <maxretries default="true">3</maxretries>
+        <startuplock default="true">false</startuplock>
+    </masterlock>
+    <musicfiles>
+        <findremotethumbs default="true">true</findremotethumbs>
+        <librarytrackformat default="true"></librarytrackformat>
+        <librarytrackformatright default="true"></librarytrackformatright>
+        <nowplayingtrackformat default="true"></nowplayingtrackformat>
+        <nowplayingtrackformatright default="true"></nowplayingtrackformatright>
+        <trackformat default="true">[%N. ]%A - %T</trackformat>
+        <trackformatright default="true">%D</trackformatright>
+        <usetags default="true">true</usetags>
+    </musicfiles>
+    <musiclibrary>
+        <albumsscraper default="true">metadata.album.universal</albumsscraper>
+        <artistsscraper default="true">metadata.artists.universal</artistsscraper>
+        <backgroundupdate default="true">false</backgroundupdate>
+        <downloadinfo default="true">false</downloadinfo>
+        <overridetags default="true">false</overridetags>
+        <showallitems default="true">true</showallitems>
+        <showcompilationartists default="true">true</showcompilationartists>
+        <updateonstartup default="true">false</updateonstartup>
+    </musiclibrary>
+    <musicplayer>
+        <autoplaynextitem default="true">true</autoplaynextitem>
+        <crossfade default="true">0</crossfade>
+        <crossfadealbumtracks default="true">true</crossfadealbumtracks>
+        <queuebydefault default="true">false</queuebydefault>
+        <replaygainavoidclipping default="true">false</replaygainavoidclipping>
+        <replaygainnogainpreamp default="true">89</replaygainnogainpreamp>
+        <replaygainpreamp default="true">89</replaygainpreamp>
+        <replaygaintype default="true">1</replaygaintype>
+        <seekdelay default="true">750</seekdelay>
+        <seeksteps default="true">-60,-30,-10,10,30,60</seeksteps>
+        <visualisation default="true">visualization.glspectrum</visualisation>
+    </musicplayer>
+    <mymusic>
+        <defaultlibview default="true"></defaultlibview>
+        <songthumbinvis default="true">false</songthumbinvis>
+        <startwindow>10503</startwindow>
+        <playlist>
+            <repeat>false</repeat>
+            <shuffle>false</shuffle>
+        </playlist>
+        <needsupdate>0</needsupdate>
+    </mymusic>
+    <myvideos>
+        <extractchapterthumbs default="true">false</extractchapterthumbs>
+        <extractflags default="true">true</extractflags>
+        <extractthumb default="true">true</extractthumb>
+        <flatten default="true">false</flatten>
+        <replacelabels default="true">true</replacelabels>
+        <selectaction default="true">1</selectaction>
+        <stackvideos default="true">false</stackvideos>
+        <watchmodemovies>0</watchmodemovies>
+        <watchmodetvshows>0</watchmodetvshows>
+        <watchmodemusicvideos>0</watchmodemusicvideos>
+        <playlist>
+            <repeat>false</repeat>
+            <shuffle>false</shuffle>
+        </playlist>
+        <needsupdate>0</needsupdate>
+    </myvideos>
+    <network>
+        <bandwidth default="true">0</bandwidth>
+        <httpproxypassword default="true"></httpproxypassword>
+        <httpproxyport default="true">8080</httpproxyport>
+        <httpproxyserver default="true"></httpproxyserver>
+        <httpproxytype default="true">0</httpproxytype>
+        <httpproxyusername default="true"></httpproxyusername>
+        <usehttpproxy default="true">false</usehttpproxy>
+    </network>
+    <pictures>
+        <displayresolution default="true">14</displayresolution>
+        <generatethumbs default="true">true</generatethumbs>
+        <showvideos default="true">true</showvideos>
+        <useexifrotation default="true">true</useexifrotation>
+        <usetags default="true">true</usetags>
+    </pictures>
+    <powermanagement>
+        <displaysoff default="true">0</displaysoff>
+        <shutdownstate default="true">0</shutdownstate>
+        <shutdowntime default="true">0</shutdowntime>
+        <wakeonaccess default="true">false</wakeonaccess>
+    </powermanagement>
+    <pvrmanager>
+        <backendchannelorder default="true">true</backendchannelorder>
+        <enabled default="true">false</enabled>
+        <hideconnectionlostwarning default="true">false</hideconnectionlostwarning>
+        <syncchannelgroups default="true">true</syncchannelgroups>
+        <usebackendchannelnumbers default="true">false</usebackendchannelnumbers>
+    </pvrmanager>
+    <pvrmenu>
+        <closechannelosdonswitch default="true">true</closechannelosdonswitch>
+        <displaychannelinfo default="true">5</displaychannelinfo>
+        <iconpath default="true"></iconpath>
+    </pvrmenu>
+    <pvrparental>
+        <duration default="true">300</duration>
+        <enabled default="true">false</enabled>
+        <pin default="true"></pin>
+    </pvrparental>
+    <pvrplayback>
+        <channelentrytimeout default="true">0</channelentrytimeout>
+        <confirmchannelswitch default="true">false</confirmchannelswitch>
+        <fps default="true">0</fps>
+        <playminimized default="true">true</playminimized>
+        <scantime default="true">10</scantime>
+        <signalquality default="true">true</signalquality>
+        <startlast default="true">0</startlast>
+    </pvrplayback>
+    <pvrpowermanagement>
+        <backendidletime default="true">15</backendidletime>
+        <dailywakeup default="true">false</dailywakeup>
+        <dailywakeuptime default="true">00:00:00</dailywakeuptime>
+        <enabled default="true">false</enabled>
+        <prewakeup default="true">15</prewakeup>
+        <setwakeupcmd default="true"></setwakeupcmd>
+    </pvrpowermanagement>
+    <pvrrecord>
+        <defaultlifetime default="true">99</defaultlifetime>
+        <defaultpriority default="true">50</defaultpriority>
+        <instantrecordtime default="true">120</instantrecordtime>
+        <marginend default="true">0</marginend>
+        <marginstart default="true">0</marginstart>
+        <timernotifications default="true">true</timernotifications>
+    </pvrrecord>
+    <scrapers>
+        <moviesdefault default="true">metadata.themoviedb.org</moviesdefault>
+        <musicvideosdefault default="true">metadata.musicvideos.theaudiodb.com</musicvideosdefault>
+        <tvshowsdefault default="true">metadata.tvdb.com</tvshowsdefault>
+    </scrapers>
+    <screensaver>
+        <mode></mode>
+        <time default="true">3</time>
+        <usedimonpause default="true">true</usedimonpause>
+        <usemusicvisinstead default="true">true</usemusicvisinstead>
+    </screensaver>
+    <services>
+        <airplay>true</airplay>
+        <airplayios8compat default="true">true</airplayios8compat>
+        <airplaypassword default="true"></airplaypassword>
+        <airplayvolumecontrol default="true">true</airplayvolumecontrol>
+        <devicename default="true">Kodi</devicename>
+        <esallinterfaces>true</esallinterfaces>
+        <escontinuousdelay default="true">25</escontinuousdelay>
+        <esenabled default="true">true</esenabled>
+        <esinitialdelay default="true">750</esinitialdelay>
+        <esmaxclients default="true">20</esmaxclients>
+        <esport default="true">9777</esport>
+        <esportrange default="true">10</esportrange>
+        <upnpannounce default="true">true</upnpannounce>
+        <upnpcontroller default="true">false</upnpcontroller>
+        <upnplookforexternalsubtitles default="true">false</upnplookforexternalsubtitles>
+        <upnprenderer default="true">false</upnprenderer>
+        <upnpserver default="true">false</upnpserver>
+        <useairplaypassword default="true">false</useairplaypassword>
+        <webserver default="true">false</webserver>
+        <webserverpassword default="true"></webserverpassword>
+        <webserverport default="true">8080</webserverport>
+        <webserverusername default="true">kodi</webserverusername>
+        <webskin default="true">webinterface.default</webskin>
+        <zeroconf default="true">true</zeroconf>
+    </services>
+    <slideshow>
+        <displayeffects default="true">true</displayeffects>
+        <shuffle default="true">false</shuffle>
+        <staytime default="true">5</staytime>
+    </slideshow>
+    <smb>
+        <winsserver default="true">0.0.0.0</winsserver>
+        <workgroup default="true">WORKGROUP</workgroup>
+    </smb>
+    <subtitles>
+        <align default="true">0</align>
+        <charset default="true">DEFAULT</charset>
+        <color default="true">1</color>
+        <custompath default="true"></custompath>
+        <downloadfirst default="true">false</downloadfirst>
+        <font default="true">arial.ttf</font>
+        <height default="true">28</height>
+        <languages default="true">English</languages>
+        <movie default="true"></movie>
+        <overrideassfonts default="true">false</overrideassfonts>
+        <parsecaptions default="true">false</parsecaptions>
+        <pauseonsearch default="true">true</pauseonsearch>
+        <stereoscopicdepth default="true">0</stereoscopicdepth>
+        <storagemode default="true">0</storagemode>
+        <style default="true">1</style>
+        <tv default="true"></tv>
+    </subtitles>
+    <system>
+        <playlistspath>special://profile/playlists/</playlistspath>
+    </system>
+    <videolibrary>
+        <actorthumbs default="true">true</actorthumbs>
+        <backgroundupdate default="true">false</backgroundupdate>
+        <flattentvshows default="true">1</flattentvshows>
+        <groupmoviesets default="true">false</groupmoviesets>
+        <showallitems default="true">true</showallitems>
+        <showunwatchedplots default="true">true</showunwatchedplots>
+        <tvshowsincludeallseasonsandspecials default="true">0</tvshowsincludeallseasonsandspecials>
+        <tvshowsselectfirstunwatcheditem default="true">0</tvshowsselectfirstunwatcheditem>
+        <updateonstartup default="true">false</updateonstartup>
+    </videolibrary>
+    <videoplayer>
+        <adjustrefreshrate default="true">0</adjustrefreshrate>
+        <autoplaynextitem default="true">false</autoplaynextitem>
+        <errorinaspect default="true">0</errorinaspect>
+        <hqscalers default="true">0</hqscalers>
+        <limitguiupdate default="true">10</limitguiupdate>
+        <pauseafterrefreshchange default="true">0</pauseafterrefreshchange>
+        <preferdefaultflag default="true">true</preferdefaultflag>
+        <prefervaapirender default="true">true</prefervaapirender>
+        <quitstereomodeonstop default="true">true</quitstereomodeonstop>
+        <rendermethod default="true">0</rendermethod>
+        <seekdelay default="true">750</seekdelay>
+        <seeksteps default="true">-600,-300,-180,-60,-30,-10,10,30,60,180,300,600</seeksteps>
+        <stereoscopicplaybackmode default="true">0</stereoscopicplaybackmode>
+        <stretch43 default="true">0</stretch43>
+        <teletextenabled default="true">true</teletextenabled>
+        <teletextscale default="true">true</teletextscale>
+        <useamcodec default="true">true</useamcodec>
+        <usedisplayasclock default="true">false</usedisplayasclock>
+        <usedxva2 default="true">true</usedxva2>
+        <usemmal default="true">true</usemmal>
+        <useomx default="true">true</useomx>
+        <useomxplayer default="true">false</useomxplayer>
+        <usevaapi default="true">true</usevaapi>
+        <usevaapimpeg2 default="true">true</usevaapimpeg2>
+        <usevaapimpeg4 default="true">true</usevaapimpeg4>
+        <usevaapivc1 default="true">true</usevaapivc1>
+        <usevda default="true">true</usevda>
+        <usevdpau default="true">true</usevdpau>
+        <usevdpaumixer default="true">true</usevdpaumixer>
+        <usevdpaumpeg2 default="true">true</usevdpaumpeg2>
+        <usevdpaumpeg4 default="true">false</usevdpaumpeg4>
+        <usevdpauvc1 default="true">true</usevdpauvc1>
+        <usevideotoolbox default="true">true</usevideotoolbox>
+    </videoplayer>
+    <videoscreen>
+        <blankdisplays default="true">false</blankdisplays>
+        <fakefullscreen default="true">true</fakefullscreen>
+        <limitedrange default="true">false</limitedrange>
+        <limitgui default="true">0</limitgui>
+        <monitor default="true">Default</monitor>
+        <preferedstereoscopicmode default="true">100</preferedstereoscopicmode>
+        <resolution default="true">16</resolution>
+        <screen default="true">0</screen>
+        <screenmode default="true">DESKTOP</screenmode>
+        <stereoscopicmode default="true">0</stereoscopicmode>
+        <textures32 default="true">true</textures32>
+        <vsync default="true">2</vsync>
+    </videoscreen>
+    <weather>
+        <addon default="true"></addon>
+        <currentlocation default="true">1</currentlocation>
+    </weather>
+    <window>
+        <height default="true">480</height>
+        <width default="true">720</width>
+    </window>
+    <skinsettings>
+        <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.confluence.UseCustomBackground">false</setting>
+        <setting type="bool" name="skin.confluence.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.confluence.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.confluence.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.confluence.HomepageHideRecentlyAddedVideo">false</setting>
+        <setting type="bool" name="skin.confluence.HomepageHideRecentlyAddedAlbums">false</setting>
+        <setting type="bool" name="skin.confluence.homepageWeatherinfo">false</setting>
+        <setting type="bool" name="skin.confluence.homepageMusicinfo">false</setting>
+        <setting type="bool" name="skin.confluence.homepageVideoinfo">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoMovieButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoTVShowButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.UseCustomBackground">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.EnableBottomBG">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.EnablePlayerButtonsBG">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.DebugGrid">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.DebugInfo">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideWeatherTitleWidget">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.Hide1024x600Fix">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.EnableBGPictures">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.EnableBGColor">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.UseCustomLogo">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideVisualisationHome">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.Enable_Clock_Animation">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.Show_Clock_white">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.Enable_Clock_Second_Hand">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonTime">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.UseVisBg">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.UseVisBgCover">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonMusicPlayerTitle">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideRandomRepeat">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonRadioStationName">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonMusic">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonVideo">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonNavigation">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonRadio">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonShutdownDialog">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonFileManager">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonConnect3g">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonWeather">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonFavourites">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonPrograms">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideSettingsManager">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.ShowOutlines">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.AddCustomButton1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.AddCustomButton2">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.AddCustomButton3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.UseCustomMusic">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.UseCustomVideo">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.UseVisBgFull">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.OpenSettingsMenu1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.OpenSettingsMenu2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.OpenSettingsMenu3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.MuteVolume">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.RadioAddonBackground">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.RadioAddonRadioText">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.ListRadioStation">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.DeleteRadioStation">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.SaveRadioStation">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.MediaSubMenuVisible">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.BGPicturesAllowFocus">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonMusicArtists">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonMusicAlbums">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonMusicGenres">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonDayNight">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonMusicGenre">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideSettingsManager2.1">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.MediaSubMenuVisible2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.EnableTitleText">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonConnectWiFi">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideSettingsManager2.2">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.disablecontext:script.playrandomvideos">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideVolumeBar">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideAppSwitcher">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.EnableTitleImage">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuRadioIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuMusicIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuAlbumsIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuArtistsIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuGenresIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuVideoIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuNaviIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuFavouritesIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuProgramsIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuOBDIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuWeatherIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenu3GIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuSettingsIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutdownIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutDownNoDialogIcon1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuRadioIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuMusicIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuAlbumsIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuArtistsIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuGenresIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuVideoIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuNaviIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuFavouritesIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuProgramsIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuOBDIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuWeatherIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenu3GIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuSettingsIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutdownIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutDownNoDialogIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuIcon2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuRadioIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuMusicIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuAlbumsIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuArtistsIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuGenresIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuVideoIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuNaviIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuFavouritesIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuProgramsIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuOBDIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuWeatherIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenu3GIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuSettingsIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutdownIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutDownNoDialogIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuIcon3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuRadioIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuMusicIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuAlbumsIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuArtistsIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuGenresIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuVideoIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuNaviIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuFavouritesIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuProgramsIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuOBDIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuWeatherIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenu3GIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuSettingsIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutdownIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutDownNoDialogIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuIcon4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuRadioIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuMusicIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuAlbumsIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuArtistsIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuGenresIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuVideoIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuNaviIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuFavouritesIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuProgramsIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuOBDIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuWeatherIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenu3GIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuSettingsIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutdownIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutDownNoDialogIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuIcon5">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuRadioIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuMusicIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuAlbumsIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuArtistsIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuGenresIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuVideoIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuNaviIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuFavouritesIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuProgramsIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuOBDIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuWeatherIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenu3GIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuSettingsIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutdownIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuShutDownNoDialogIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.CustomMenuIcon6">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonOBD">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.SubmenuIconsSmall">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.SubmenuIconsMid">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.SubmenuIconsBig">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.EnableSubmenuBG">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideSettingsManager2.3">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.EnableTempOutput">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.confluence.AutoScroll">false</setting>
+        <setting type="bool" name="skin.confluence.FirstTimeRun">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.ShowMousePointer">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.SwitchTempClock">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.Enable_Temp_Display">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.TempBackground">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.Enable_Temp_Clock">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonSettings">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonPlaylistEditor">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonTempClockSwitch">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonUSBManager">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonPiWire">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonGPIODiag">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideHomeButtonPiDash">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.ShowMagicSMB1">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.MagicSMB1ShowInAppswitcherOnly">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.ShowMagicSMB2">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.MagicSMB2ShowInAppswitcherOnly">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.ShowMagicSMB3">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.MagicSMB3ShowInAppswitcherOnly">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.ShowMagicSMB4">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.MagicSMB4ShowInAppswitcherOnly">false</setting>
+        <setting type="bool" name="skin.carpc-xtouch.HideSettingsManager2.4">true</setting>
+        <setting type="bool" name="skin.carpc-xtouch.ScrollbarBold">false</setting>
+        <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton5"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton5"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton1"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton2"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton3"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton4"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton5"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomBackgroundPath">/home/pi/Bilder/Backgrounds/wave-backgrounds/waves_blue_bg.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.BottomBGColor">Color125</setting>
+        <setting type="string" name="skin.carpc-xtouch.BottomBGTransparency">bottombar_bg10.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomColorFocus">Color125</setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomColorNofocus">Color8</setting>
+        <setting type="string" name="skin.carpc-xtouch.PlayerButtonsBGColor">Color125</setting>
+        <setting type="string" name="skin.carpc-xtouch.PlayerButtonsBGTransparency">playerbuttons_bg30.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeScreenTitle"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Home1BG">/home/pi/Bilder/Buttons_Examples/buttonbg-music.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.Home2BG">/home/pi/Bilder/Buttons_Examples/buttonbg-radio.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.Home3BG">/home/pi/Bilder/Buttons_Examples/buttonbg-navi.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.Home4BG">/home/pi/Bilder/Buttons_Examples/buttonbg-video.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.Home5BG">/home/pi/Bilder/Buttons_Examples/buttonbg-settings.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.Home6BG">/home/pi/Bilder/Buttons_Examples/buttonbg-shutdown.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.HBSolidColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HBTransparency"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosRadio">2</setting>
+        <setting type="string" name="skin.carpc-xtouch.HBOutlineColor">Color125</setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomColorHomebuttons">Color9</setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosMusic">1</setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosVideo">4</setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosNavi">3</setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosSettings">5</setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosShutdown">6</setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosShutdownNoDialog"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosShutdownNoDialogNoDialog"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosWeather"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePos3G"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomePosOBD"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonPos"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonIcon"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonLabel"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButton2Pos"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButton2Icon"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButton2Label"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButton3Pos"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButton3Icon"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButton3Label"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomLogoPath">/home/pi/Bilder/Clock/logoforclock_seat.png</setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVisBgPath"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeContentPage"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton7"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton8"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton9"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton10"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton11"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeAddonButton12"></setting>
+        <setting type="string" name="skin.carpc-xtouch.FirstSettings"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ChangeSkinColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ChangeFocusColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ChangeOutlineColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ChangeIconTextColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.SkinSettings">1</setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting2a">1</setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting2b"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting2c"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting3a"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting3b">1</setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting3c"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting4a"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting4b">1</setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting6a">1</setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting6b"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonAction"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButton2Action"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButton3Action"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting7a"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting7d"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting7b"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting7c"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting9a">1</setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting9b"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicPath"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoPath"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVisBgFullPath"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ChangeBottomBGColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ChangeButtonBGColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ChangePlayerButtonsBGColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Station1">94.8 -   SWR3</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station2">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station3">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station4">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station5">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station6">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station7">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station8">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station9">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station10">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station1b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station2b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station3b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station4b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station5b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station6b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station7b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station8b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station9b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.Station10b">- - -</setting>
+        <setting type="string" name="skin.carpc-xtouch.RadioAddonBackgroundImage">radiodefault.jpg</setting>
+        <setting type="string" name="skin.carpc-xtouch.Home2BGFocus"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Home1BGFocus"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Home4BGFocus"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Home3BGFocus"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Home5BGFocus"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Home6BGFocus"></setting>
+        <setting type="string" name="skin.carpc-xtouch.DayNightModus"></setting>
+        <setting type="string" name="skin.carpc-xtouch.StoredVolume">15</setting>
+        <setting type="string" name="skin.carpc-xtouch.TempSensor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeScreenTitleImage"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeButton1Value">MusicPath</setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicButtonIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomRadioIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomAlbumsIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomArtistsIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomGenresIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomNaviIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomFavouritesIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomProgramsIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomOBDIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomWeatherIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Custom3GIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomSettingsIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMenuShutIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutDownNoDialogIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonLabel1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeButton2Value">RadioFM</setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicButtonIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomRadioIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomAlbumsIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomArtistsIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomGenresIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomNaviIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomFavouritesIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomProgramsIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomOBDIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomWeatherIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Custom3GIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomSettingsIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutdownIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutDownNoDialogIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMenuButtonIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonLabel2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeButton3Value">Navigation</setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicButtonIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomRadioIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomAlbumsIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomArtistsIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomGenresIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomNaviIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomFavouritesIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomProgramsIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomOBDIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomWeatherIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Custom3GIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomSettingsIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutdownIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutDownNoDialogIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMenuButtonIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonLabel3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeButton4Value">Video</setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicButtonIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomRadioIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomAlbumsIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomArtistsIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomGenresIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomNaviIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomFavouritesIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomProgramsIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomOBDIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomWeatherIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Custom3GIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomSettingsIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutdownIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutDownNoDialogIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMenuButtonIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonLabel4">FM Radio</setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeButton5Value">Settings</setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicButtonIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomRadioIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomAlbumsIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomArtistsIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomGenresIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomNaviIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomFavouritesIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomProgramsIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomOBDIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomWeatherIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Custom3GIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomSettingsIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutdownIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutDownNoDialogIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMenuButtonIcon5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonLabel5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.HomeButton6Value">Shutdown</setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicButtonIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomRadioIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomAlbumsIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomArtistsIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomGenresIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomNaviIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomFavouritesIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomProgramsIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomOBDIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomWeatherIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Custom3GIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomSettingsIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutdownIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutDownNoDialogIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonLabel6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomSubmenuBGColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.SubmenuBGTransparency"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ConfigButton">4</setting>
+        <setting type="string" name="skin.carpc-xtouch.SaveDayNight"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonAction1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonAction2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonAction3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonAction4">RunPlugin(plugin://pvr.rtl.radiofm)</setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonAction5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomHomeButtonAction6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicPath1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicPath2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicPath3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicPath4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicPath5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMusicPath6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoPath1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoPath2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoPath3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoPath4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoPath5"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomVideoPath6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomShutdownIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting8a">1</setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting8b"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Startup_Playlist_Path"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ChangeSubmenuBGColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.CustomMenuButtonIcon6"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ClockColor">white</setting>
+        <setting type="string" name="skin.carpc-xtouch.TempSensorCount"></setting>
+        <setting type="string" name="skin.carpc-xtouch.TempBackgroundPath"></setting>
+        <setting type="string" name="skin.carpc-xtouch.TempLabelColor"></setting>
+        <setting type="string" name="skin.carpc-xtouch.TempClockColorMinutes"></setting>
+        <setting type="string" name="skin.carpc-xtouch.TempClockColorHours"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBIcon1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBLabel1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBIcon2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBLabel2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBIcon3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBLabel3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBIcon4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBLabel4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting3d"></setting>
+        <setting type="string" name="skin.carpc-xtouch.OpenSetting8c"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ConfigMagicSMB1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBAction1"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ConfigMagicSMB2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBAction2"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ConfigMagicSMB3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBAction3"></setting>
+        <setting type="string" name="skin.carpc-xtouch.ConfigMagicSMB4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.MagicSMBAction4"></setting>
+        <setting type="string" name="skin.carpc-xtouch.DialogReset"></setting>
+        <setting type="string" name="skin.carpc-xtouch.Container.SortMethod"></setting>
+    </skinsettings>
+    <resolutions />
+    <defaultvideosettings>
+        <deinterlacemode>1</deinterlacemode>
+        <interlacemethod>1</interlacemethod>
+        <scalingmethod>1</scalingmethod>
+        <noisereduction>0.000000</noisereduction>
+        <postprocess>false</postprocess>
+        <sharpness>0.000000</sharpness>
+        <viewmode>0</viewmode>
+        <zoomamount>1.000000</zoomamount>
+        <pixelratio>1.000000</pixelratio>
+        <verticalshift>0.000000</verticalshift>
+        <volumeamplification>0.000000</volumeamplification>
+        <outputtoallspeakers>false</outputtoallspeakers>
+        <showsubtitles>true</showsubtitles>
+        <brightness>50.000000</brightness>
+        <contrast>50.000000</contrast>
+        <gamma>20.000000</gamma>
+        <audiodelay>0.000000</audiodelay>
+        <subtitledelay>0.000000</subtitledelay>
+        <nonlinstretch>false</nonlinstretch>
+        <stereomode>0</stereomode>
+    </defaultvideosettings>
+    <viewstates>
+        <musicfiles>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicfiles>
+        <musiclastfm>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musiclastfm>
+        <musicnavalbums>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavalbums>
+        <musicnavartists>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavartists>
+        <musicnavsongs>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </musicnavsongs>
+        <pictures>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </pictures>
+        <programs>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </programs>
+        <videofiles>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videofiles>
+        <videonavactors>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavactors>
+        <videonavepisodes>
+            <viewmode>720896</viewmode>
+            <sortmethod>21</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavepisodes>
+        <videonavgenres>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavgenres>
+        <videonavmusicvideos>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavmusicvideos>
+        <videonavseasons>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavseasons>
+        <videonavtitles>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavtitles>
+        <videonavtvshows>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavtvshows>
+        <videonavyears>
+            <viewmode>65536</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+            <sortattributes>0</sortattributes>
+        </videonavyears>
+    </viewstates>
+    <audio>
+        <mute>false</mute>
+        <fvolumelevel>0.290000</fvolumelevel>
+    </audio>
+</settings>

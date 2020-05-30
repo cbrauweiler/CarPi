@@ -1,0 +1,621 @@
+<window id="1200">
+	<defaultcontrol always="true">1203</defaultcontrol>
+	<controls>
+	    <include>Window_OpenClose_Animation_Zoom</include>
+	    <include>CommonBackground</include>
+
+	    <control type="image">
+		    <include>Window_OpenClose_Animation_Slide_Down</include>
+		    <posx>0</posx>
+		    <posy>0</posy>
+		    <width>ScreenWidth</width>
+		    <height>80</height>
+		    <texture>usb_topbar.png</texture>
+	    </control>
+	    <control type="group">
+		<control type="image">		
+			<include>Window_OpenClose_Animation_Slide_Down</include>
+			<include>VisibleFadeEffect</include>
+			<posx>450</posx>
+		        <posy>0</posy>
+			<width>375</width>
+			<height>75</height>
+			<aligny>center</aligny>
+			<align>center</align>
+			<texture>usb_ceas.png</texture>
+		</control>
+		<control type="label">
+			<include>Window_OpenClose_Animation_Slide_Down</include>
+			<description>time label</description>
+			<posx>255</posx>
+			<posy>0</posy>
+			<width>350</width>
+			<height>67</height>
+			<aligny>center</aligny>
+			<align>center</align>
+			<font>font50_title</font>
+			<textcolor>white</textcolor>
+			<label>$INFO[System.Time]</label>
+			<include>VisibleFadeEffect</include>
+			<include>16x9_xPos_Relocation</include>
+		</control>
+	    </control>	
+	    <control type="image">
+		    <include>Window_OpenClose_Animation_Slide_Up</include>
+		    <posx>0</posx>
+		    <posy>630</posy>
+		    <width>ScreenWidth</width>
+		    <height>90</height>
+		    <texture>usb_bottombar.png</texture>
+	    </control>
+	    <control type="button" id="1203">
+		    <description>Dummy Focus Button</description>
+		    <posx>-1</posx>
+		    <posy>-1</posy>
+		    <width>1</width>
+		    <height>1</height>
+		    <font>-</font>
+		    <texturenofocus border="5">usb_overlay.png</texturenofocus>
+		    <texturefocus border="5">usb_overlay.png</texturefocus>
+		    <ondown>1201</ondown>
+		    <onup>1202</onup>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+		<posx>0</posx>
+		<posy>0</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1201">
+			<description>Home Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>75</width>
+			<height>75</height>
+			<font>-</font>
+			<texturenofocus border="5">usb_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">usb_floor_buttonFO.png</texturefocus>
+			<onclick>ActivateWindow(Home)</onclick>
+			<ondown>1205</ondown>
+			<onup>1203</onup>
+		</control>
+		<control type="image">
+			<description>Home Button Image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>70</width>
+			<height>70</height>
+			<texture>usb_icon_home.png</texture>
+		</control>
+
+		<control type="label">
+			<description>Title</description>
+			<posx>100</posx>
+			<posy>0</posy>
+			<width>350</width>
+			<font>font30_title</font>
+			<height>80</height>
+			<aligny>center</aligny>
+			<label>USB Manager</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<posx>170r</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1202">
+			<description>Back Button</description>
+			<posx>86</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">usb_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">usb_floor_buttonFO.png</texturefocus>
+			<onclick>ParentDir</onclick>
+			<ondown>1203</ondown>
+			<onup>1204</onup>
+			<onleft>1204</onleft>
+		</control>
+		<control type="image">
+			<description>Back Button Image</description>
+			<posx>96</posx>
+			<posy>8</posy>
+			<width>64</width>
+			<height>64</height>
+			<texture>usb_icon_back_w.png</texture>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<posx>0</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1204">
+			<description>Settings Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>82</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">usb_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">usb_floor_buttonFO.png</texturefocus>
+			<ondown>1202</ondown>
+			<onup>1205</onup>
+			<onright>1202</onright>
+		</control>
+		<control type="image">
+			<description>Settings Button Image</description>
+			<posx>8</posx>
+			<posy>8</posy>
+			<width>64</width>
+			<height>64</height>
+			<texture>usb_icon_settings_w.png</texture>
+		</control>
+	    </control>
+
+
+	    <control type="group">
+		<description>USB1</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<include>VisibleFadeEffect</include>
+		<visible>substring(Window(Home).Property(showusb1),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<posx>125</posx>
+		<posy>230</posy>
+		<control type="button" id="1205">
+			<description>Button1</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>250</width>
+			<height>250</height>
+			<texturenofocus>usb_button.png</texturenofocus>
+			<texturefocus>usb_buttonFO.png</texturefocus>
+			<ondown>1204</ondown>
+			<onup>1201</onup>
+			<onleft>1208</onleft>
+			<onright>1206</onright>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>30</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usb1)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>80</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usblabel1)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>130</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usbfstype1)][/B]</label>
+		</control>
+        	<control type="label">
+			<visible>substring(Window(Home).Property(updating),false)</visible>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usbmounted1)][/B]</label>
+		</control>
+        	<control type="label">
+			<visible>substring(Window(Home).Property(updating),true)</visible>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B][COLOR=orange]$ADDON[plugin.program.usbmanager 30007][/COLOR][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>USB2</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<include>VisibleFadeEffect</include>
+		<visible>substring(Window(Home).Property(showusb2),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<posx>385</posx>
+		<posy>230</posy>
+		<control type="button" id="1206">
+			<description>Button2</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>250</width>
+			<height>250</height>
+			<texturenofocus>usb_button.png</texturenofocus>
+			<texturefocus>usb_buttonFO.png</texturefocus>
+			<ondown>1204</ondown>
+			<onup>1201</onup>
+			<onleft>1205</onleft>
+			<onright>1207</onright>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>30</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usb2)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>80</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usblabel2)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>130</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usbfstype2)][/B]</label>
+		</control>
+        	<control type="label">
+			<visible>substring(Window(Home).Property(updating),false)</visible>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usbmounted2)][/B]</label>
+		</control>
+        	<control type="label">
+			<visible>substring(Window(Home).Property(updating),true)</visible>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B][COLOR=orange]$ADDON[plugin.program.usbmanager 30007][/COLOR][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>USB3</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<include>VisibleFadeEffect</include>
+		<visible>substring(Window(Home).Property(showusb3),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<posx>645</posx>
+		<posy>230</posy>
+		<control type="button" id="1207">
+			<description>Button3</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>250</width>
+			<height>250</height>
+			<texturenofocus>usb_button.png</texturenofocus>
+			<texturefocus>usb_buttonFO.png</texturefocus>
+			<ondown>1204</ondown>
+			<onup>1201</onup>
+			<onleft>1206</onleft>
+			<onright>1208</onright>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>30</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usb3)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>80</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usblabel3)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>130</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usbfstype3)][/B]</label>
+		</control>
+        	<control type="label">
+			<visible>substring(Window(Home).Property(updating),false)</visible>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usbmounted3)][/B]</label>
+		</control>
+        	<control type="label">
+			<visible>substring(Window(Home).Property(updating),true)</visible>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B][COLOR=orange]$ADDON[plugin.program.usbmanager 30007][/COLOR][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>USB4</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<include>VisibleFadeEffect</include>
+		<visible>substring(Window(Home).Property(showusb4),true)</visible>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<posx>905</posx>
+		<posy>230</posy>
+		<control type="button" id="1208">
+			<description>Button4</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>250</width>
+			<height>250</height>
+			<texturenofocus>usb_button.png</texturenofocus>
+			<texturefocus>usb_buttonFO.png</texturefocus>
+			<ondown>1204</ondown>
+			<onup>1201</onup>
+			<onleft>1207</onleft>
+			<onright>1205</onright>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>30</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usb4)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>80</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usblabel4)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>130</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usbfstype4)][/B]</label>
+		</control>
+        	<control type="label">
+			<visible>substring(Window(Home).Property(updating),false)</visible>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(usbmounted4)][/B]</label>
+		</control>
+        	<control type="label">
+			<visible>substring(Window(Home).Property(updating),true)</visible>
+            		<posx>0</posx>
+            		<posy>170</posy>
+            		<width>250</width>
+            		<height>50</height>
+            		<font>font20</font>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B][COLOR=orange]$ADDON[plugin.program.usbmanager 30007][/COLOR][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>baserequirements</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),false)</visible>
+		<posx>0</posx>
+		<posy>305</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>0</posy>
+            		<width>1280</width>
+            		<height>120</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.usbmanager 30042][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>install</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<visible>substring(Window(Home).Property(install),true)</visible>
+		<posx>0</posx>
+		<posy>305</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>0</posy>
+            		<width>1280</width>
+            		<height>80</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.usbmanager 30021][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>80</posy>
+            		<width>1280</width>
+            		<height>80</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(installmessage)][/B]</label>
+		</control>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>160</posy>
+            		<width>1280</width>
+            		<height>80</height>
+            		<font>font30</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$INFO[Window(Home).Property(commandoutput)][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>automountactive</description>
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<include>VisibleFadeEffect</include>
+		<visible>substring(Window(Home).Property(automount),true)</visible>
+		<posx>0</posx>
+		<posy>630</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>30</posy>
+            		<width>1280</width>
+            		<height>40</height>
+            		<font>font20</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.usbmanager 30052][/B]</label>
+		</control>
+	    </control>
+
+	    <control type="group">
+		<description>no storage devices</description>
+		<include>Window_OpenClose_Animation_Zoom</include>
+		<include>VisibleFadeEffect</include>
+		<visible>substring(Window(Home).Property(install),false)</visible>
+		<visible>substring(Window(Home).Property(baserequirements),true)</visible>
+		<visible>substring(Window(Home).Property(showusb1),false)</visible>
+		<visible>substring(Window(Home).Property(showusb2),false)</visible>
+		<visible>substring(Window(Home).Property(showusb3),false)</visible>
+		<visible>substring(Window(Home).Property(showusb4),false)</visible>
+		<posx>0</posx>
+		<posy>340</posy>
+        	<control type="label">
+            		<posx>0</posx>
+            		<posy>0</posy>
+            		<width>1280</width>
+            		<height>40</height>
+            		<font>font30_title</font>
+            		<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.usbmanager 30053][/B]</label>
+		</control>
+	    </control>
+
+	    <!--<control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<visible>substring(Window(Home).Property(linkavailable),true)</visible>
+		<posx>0</posx>
+		<posy>86r</posy>
+		<include>VisibleFadeEffect</include>
+		<control type="button" id="1209">
+			<description>Link Button</description>
+			<posx>310</posx>
+			<posy>0</posy>
+			<width>660</width>
+			<height>82</height>
+			<font>-</font>
+			<texturenofocus border="5">usb_floor_button_t.png</texturenofocus>
+			<texturefocus border="5">usb_floor_buttonFO.png</texturefocus>
+			<onup>1201</onup>
+			<ondown>1212</ondown>
+		</control>
+        	<control type="label">
+			<description>Link Button</description>
+            		<posx>320</posx>
+            		<posy>0</posy>
+            		<width>640</width>
+            		<height>82</height>
+            		<font>font30</font>
+            		<textcolor>white</textcolor>
+            		<align>center</align>
+            		<aligny>center</aligny>
+            		<label>[B]$ADDON[plugin.program.usbmanager 30043][/B]</label>
+		</control>
+	    </control>-->
+
+	</controls>
+</window>

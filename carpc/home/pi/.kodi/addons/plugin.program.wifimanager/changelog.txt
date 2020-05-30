@@ -1,0 +1,60 @@
+
+[B]0.2.0[/B] (2016-11-26)
+- Prepare for new skin
+
+[B]0.1.9[/B] (2016-11-04)
+- Bugfix if up/down
+
+[B]0.1.8[/B] (2016-10-21)
+- Texture update
+
+[B]0.1.7[/B] (2016-10-17)
+- Optimize switch to wifi mode after autostart ap mode / Typo fix
+
+[B]0.1.6[/B] (2016-10-13)
+- optimize hostapd.conf to support more sticks / Bugfix AP-Mode
+
+[B]0.1.5[/B] (2016-10-08)
+- support nav keys / up & down for wlan0
+
+[B]0.1.4[/B] (2016-09-02)
+- ap mode on system startup via settings
+
+[B]0.1.3[/B] (2016-09-30)
+- update hardware revision check / auto disable realtek-support on rpi3 / extended installer
+
+[B]0.1.2[/B] (2016-09-28)
+- updated dialog / fix typo / modify install command
+
+[B]0.1.1[/B] (2016-09-27)
+- support for some realtek-chips in access point mode with custom hostapd binary
+
+[B]0.1.0[/B] (2016-09-27)
+- restart option for dnsmasq and hostapd / optional check for rpi3 / better switching
+
+[B]0.0.9[/B] (2016-09-25)
+- ask for really delete entry / more failsave gui
+
+[B]0.0.8[/B] (2016-09-25)
+- fix while loop (scan counter) / optimize setup dialog
+
+[B]0.0.7[/B] (2016-09-25)
+- rework apmode gui - optimize hostapd.conf
+
+[B]0.0.6[/B] (2016-09-24)
+- Bugfix auto scan / ssid and password now configurable in settings
+
+[B]0.0.5[/B] (2016-09-23)
+- Rework package install
+
+[B]0.0.4[/B] (2016-09-22)
+- Include ap mode
+
+[B]0.0.3[/B] (2016-09-20)
+- Check for system support / extended messages in gui
+
+[B]0.0.2[/B] (2016-09-19)
+- fixes and interface check
+
+[B]0.0.1[/B] (2016-09-19)
+- First release
